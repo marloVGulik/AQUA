@@ -35,7 +35,7 @@ bool Window::init() {
 		_title.c_str(),
 		SDL_WINDOWPOS_CENTERED,
 		SDL_WINDOWPOS_CENTERED,
-		_width, _height, 0
+		_width, _height, SDL_WINDOW_FULLSCREEN_DESKTOP
 	);
 
 	if (_window == nullptr) {
@@ -72,7 +72,7 @@ void Window::pollEvents(SDL_Event &event) {
 		}
 		break;
 	case SDL_MOUSEMOTION: // Mouse motion detection
-		std::cout << event.motion.x << ", " << event.motion.y << "\n";
+		//std::cout << event.motion.x << ", " << event.motion.y << "\n";
 		break;
 	case SDL_MOUSEBUTTONDOWN: // Mouse click detection (any button :()
 		std::cout << "Mouse clicked!\n";
@@ -87,6 +87,6 @@ void Window::pollEvents(SDL_Event &event) {
 
 void Window::clear() const {
 	SDL_RenderPresent(renderer);
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
 }

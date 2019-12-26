@@ -11,7 +11,7 @@ void pollEvents(Window& window, Rect& rect) {
 
 int main(int argc, char* argv[]) {
 	Window window("OwO", 800, 600);
-	Rect rect(420, 420, 69, 100, "data/textures/yah.png");
+	Rect rect(420, 210, 69, 100, "data/textures/yah.png");
 
 	while (!window.isClosed()) {
 		pollEvents(window, rect);

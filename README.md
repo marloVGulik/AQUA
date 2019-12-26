@@ -1,2 +1,2 @@
 # AQUA
-A useful and simple render engine, very basic
+Useful engine.

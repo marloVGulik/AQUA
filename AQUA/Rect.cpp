@@ -52,6 +52,10 @@ void Rect::pollEvents(SDL_Event &event) {
 			break;
 		}
 	}
+	if (event.type == SDL_MOUSEMOTION) {
+		_x += event.motion.x - _x;
+		_y += event.motion.y - _y;
+	}
 }
 
 Rect::~Rect() {

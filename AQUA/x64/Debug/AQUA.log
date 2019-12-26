@@ -1,2 +1,6 @@
-﻿  Window.cpp
-  AQUA.vcxproj -> F:\Documents\Creation of stuff\C++\AQUA\x64\Debug\AQUA.exe
+﻿  Rect.cpp
+D:\Documents\CreationOfStuff\C++\AQUA\AQUA\Rect.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Window.cpp
+  Generating Code...
+D:\Documents\CreationOfStuff\C++\AQUA\AQUA\Rect.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  AQUA.vcxproj -> D:\Documents\CreationOfStuff\C++\AQUA\x64\Debug\AQUA.exe
