@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Console.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aqua.h" />
+    <ClInclude Include="Console.h" />
     <ClInclude Include="dependencies.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
