@@ -1,0 +1,9 @@
+﻿  Window.cpp
+Window.obj : error LNK2019: unresolved external symbol _glfwGetPrimaryMonitor referenced in function "public: __thiscall Window::Window(void)" (??0Window@@QAE@XZ)
+Window.obj : error LNK2019: unresolved external symbol _glfwGetVideoMode referenced in function "public: __thiscall Window::Window(void)" (??0Window@@QAE@XZ)
+Window.obj : error LNK2019: unresolved external symbol _glfwWindowHint referenced in function "public: __thiscall Window::Window(void)" (??0Window@@QAE@XZ)
+Window.obj : error LNK2019: unresolved external symbol _glfwCreateWindow referenced in function "public: __thiscall Window::Window(void)" (??0Window@@QAE@XZ)
+Window.obj : error LNK2019: unresolved external symbol _glfwDestroyWindow referenced in function "public: __thiscall Window::~Window(void)" (??1Window@@QAE@XZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+F:\Documents\Creation of stuff\C++\Aqua Engine\src\GLFW64\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+F:\Documents\Creation of stuff\C++\Aqua Engine\Debug\Aqua Engine.exe : fatal error LNK1120: 6 unresolved externals

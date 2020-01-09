@@ -1,5 +1,0 @@
-﻿     Creating library F:\Documents\Creation of stuff\C++\AQUA-lib\x64\Debug\AQUA.lib and object F:\Documents\Creation of stuff\C++\AQUA-lib\x64\Debug\AQUA.exp
-LINK : warning LNK4217: symbol '??0Debug@@QEAA@H@Z (public: __cdecl Debug::Debug(int))' defined in 'Debug.obj' is imported by 'dllmain.obj' in function 'DllMain'
-LINK : warning LNK4217: symbol '??1Debug@@QEAA@XZ (public: __cdecl Debug::~Debug(void))' defined in 'Debug.obj' is imported by 'dllmain.obj' in function 'DllMain'
-LINK : warning LNK4217: symbol '?log@Debug@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z (public: void __cdecl Debug::log(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >))' defined in 'Debug.obj' is imported by 'dllmain.obj' in function 'DllMain'
-  AQUA.vcxproj -> F:\Documents\Creation of stuff\C++\AQUA-lib\x64\Debug\AQUA.dll
