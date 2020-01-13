@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aqua Engine", "Aqua Engine\Aqua Engine.vcxproj", "{53BBD594-A3A8-4EF6-9C50-D1978C557E46}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aqua Engine test", "Aqua Engine test\Aqua Engine test.vcxproj", "{0A14B210-DD16-448D-B2BD-39A45A35F23C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53BBD594-A3A8-4EF6-9C50-D1978C557E46} = {53BBD594-A3A8-4EF6-9C50-D1978C557E46}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
