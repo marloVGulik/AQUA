@@ -5,7 +5,7 @@
 class Window
 {
 public:
-	Window();
+	Window(int w, int h, std::string title, bool isFullscreen);
 	~Window();
 
 	bool pollEvents();
