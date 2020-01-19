@@ -11,6 +11,7 @@ public:
 	void warn(std::string msg);
 	void error(std::string msg);
 	void aqua(std::string msg);
+	void err_callback(int error, const char* description);
 
 private:
 	int _debugMode = 0;

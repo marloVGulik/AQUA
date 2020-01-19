@@ -8,13 +8,23 @@ int main() {
 	}
 
 	console->log("Creating window");
-	Window* window = new Window(800, 600, "Official Aqua engine test!", false);
+	glfwWindowHint(GLFW_SAMPLES, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+	Window* window = new Window(800, 600, "Official Aqua engine test!", true);
+
 	console->log("Starting main loop");
 
-
-
-	while (window->isOpen()) {
+	while (window->isOpen() && glfwGetKey(window->getWindow(), GLFW_KEY_ESCAPE) != GLFW_PRESS) {
+		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 		window->pollEvents();
+	}
+
+	if (window->getWindow() != nullptr) {
+		console->log("Closing window");
+		window->close();
 	}
 
 	console->log("Stopped program loop");

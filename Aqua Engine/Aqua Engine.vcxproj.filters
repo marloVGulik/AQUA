@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Rendering">
       <UniqueIdentifier>{d6743723-e4a0-4c2b-9db3-42f5fc848b0d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\objectManager">
+      <UniqueIdentifier>{ff9ef2a3-8f8c-4a43-8318-f5bd9a9e0808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objectManager">
+      <UniqueIdentifier>{1928e07c-baa4-476c-8ee2-ee8d4a7d689f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aqua.h">
@@ -39,6 +45,15 @@
     <ClInclude Include="Console.h">
       <Filter>Header Files\tools</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\objectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="RGB.h">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="objSizes.h">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Window.cpp">
@@ -46,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="Console.cpp">
       <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\objectManager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

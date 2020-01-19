@@ -1,5 +1,4 @@
 #pragma once
-#include <GLFW/glfw3.h>
 #include "dependencies.h"
 
 class Window
@@ -11,6 +10,7 @@ public:
 	bool pollEvents();
 	bool isOpen();
 	void close();
+	GLFWwindow* getWindow();
 
 private:
 	int _width = 800;

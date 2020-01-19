@@ -24,6 +24,7 @@ Window::Window(int w, int h, std::string title, bool isFullscreen) {
 	}
 	else {
 		_open = true;
+		glfwMakeContextCurrent(_window);
 	}
 }
 Window::~Window() {
@@ -32,12 +33,20 @@ Window::~Window() {
 	}
 }
 
+GLFWwindow* Window::getWindow() {
+	return _window;
+}
+
 bool Window::pollEvents() {
 	if (_window != nullptr) {
 		if (glfwWindowShouldClose(_window)) {
 			_open = false;
 			close();
 		}
+
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		glfwSwapBuffers(_window);
 		glfwPollEvents();
 		return true;
 	}
