@@ -6,9 +6,11 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <chrono>
 #include <ctime>
 #include <functional>
+#include <vector>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>

@@ -7,3 +7,4 @@
 #include "objSizes.h"
 #include "Window.h"
 #include "GameObject.h"
+#include "Scene.h"

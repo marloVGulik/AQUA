@@ -6,13 +6,16 @@
 class GameObject
 {
 public:
-	GameObject();
+	GameObject(std::vector<GLfloat> vertices);
 	~GameObject();
 
 	void objectPollEvents();
 
 private:
-	float _vertices[10];
-	float _colors[];
-	int _numInputType;
+	std::vector<GLfloat> _vertices;
+	std::vector<int> _indices;
+	std::vector<float> _colors;
+
+	int _vertSize;
+	GLuint* _vertexBuffer;
 };
