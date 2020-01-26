@@ -48,17 +48,14 @@
     <ClInclude Include="GameObject.h">
       <Filter>Header Files\objectManager</Filter>
     </ClInclude>
-    <ClInclude Include="RGB.h">
-      <Filter>Header Files\tools</Filter>
-    </ClInclude>
-    <ClInclude Include="objSizes.h">
-      <Filter>Header Files\tools</Filter>
-    </ClInclude>
     <ClInclude Include="Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Header Files\objectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadBMP.h">
+      <Filter>Header Files\tools</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files\objectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadBMP.cpp">
+      <Filter>Source Files\tools</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

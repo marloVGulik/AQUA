@@ -93,7 +93,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)src\GLM;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)src\GLM;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +125,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)src\GLM;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +144,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLEW\include;$(solutionDir)src\GLM;$(solutionDir)Aqua Engine</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

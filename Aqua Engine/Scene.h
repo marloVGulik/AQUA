@@ -1,6 +1,7 @@
 #pragma once
 #include "dependencies.h"
 #include "GameObject.h"
+class GameObject;
 
 class Scene
 {

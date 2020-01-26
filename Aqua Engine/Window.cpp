@@ -38,6 +38,7 @@ GLFWwindow* Window::getWindow() {
 }
 
 bool Window::pollEvents() {
+	std::cout << "OWO";
 	if (_window != nullptr) {
 		if (glfwWindowShouldClose(_window)) {
 			_open = false;

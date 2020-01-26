@@ -1,0 +1,18 @@
+﻿  Main.cpp
+Main.obj : error LNK2019: unresolved external symbol _glfwTerminate referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Console::log(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?log@Console@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Window::isOpen(void)" (?isOpen@Window@@QAE_NXZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: struct GLFWwindow * __thiscall Window::getWindow(void)" (?getWindow@Window@@QAEPAUGLFWwindow@@XZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: __thiscall GameObject::GameObject(class std::vector<float,class std::allocator<float> >,class std::vector<float,class std::allocator<float> >)" (??0GameObject@@QAE@V?$vector@MV?$allocator@M@std@@@std@@0@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Scene::addGameObj(class GameObject *)" (?addGameObj@Scene@@QAEXPAVGameObject@@@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: __thiscall Engine::Engine(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Engine@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: class Window * __thiscall Engine::getWindow(void)" (?getWindow@Engine@@QAEPAVWindow@@XZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: class Console * __thiscall Engine::getConsole(void)" (?getConsole@Engine@@QAEPAVConsole@@XZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: class Scene * __thiscall Engine::getScene(void)" (?getScene@Engine@@QAEPAVScene@@XZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Engine::loadShaders(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?loadShaders@Engine@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Engine::update(void)" (?update@Engine@@QAEXXZ) referenced in function _main
+F:\Documents\Creation of stuff\C++\Aqua-git\src\GLFW64\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+F:\Documents\Creation of stuff\C++\Aqua-git\x64\Debug\Aqua Engine.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+F:\Documents\Creation of stuff\C++\Aqua-git\src\GLEW\lib\release\x64\glew32.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+F:\Documents\Creation of stuff\C++\Aqua-git\Debug\Aqua Engine test.exe : fatal error LNK1120: 13 unresolved externals

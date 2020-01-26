@@ -22,6 +22,7 @@
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="LoadBMP.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
@@ -31,8 +32,7 @@
     <ClInclude Include="dependencies.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="objSizes.h" />
-    <ClInclude Include="RGB.h" />
+    <ClInclude Include="LoadBMP.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
@@ -105,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLM</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLM</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,7 +137,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLM</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,7 +156,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)src\GLEW\include;$(solutionDir)src\GLFW64\include;$(solutionDir)src\GLM</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

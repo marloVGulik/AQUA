@@ -28,9 +28,32 @@ Engine::Engine(std::string title) {
 		_console->log("Started engine succesfully!");
 	}
 
+	
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
+
+	_VAID = new GLuint;
+	glGenVertexArrays(1, _VAID);
+	glBindVertexArray(*_VAID);
+
+	glClearColor(0.6392156862f, 0.7372549019607f, 0.90196078431372549f, 1.0f);
+
+	_programID = glCreateProgram();
+	_matrixID = glGetUniformLocation(_programID, "MVP");
+
+	_projection = glm::perspective(glm::radians(45.0f), 16.0f / 9.0f, 0.1f, 100.0f);
+	_view = glm::lookAt(
+		glm::vec3(4, 3, 3),
+		glm::vec3(0, 0, 0),
+		glm::vec3(0, 1, 0)
+	);
+	_model = glm::mat4(1.0f);
+	_MVP = _projection * _view * _model;
+
 }
 Engine::~Engine() {
-
+	glDeleteVertexArrays(1, _VAID);
+	glDeleteProgram(_programID);
 }
 
 Window* Engine::getWindow()
@@ -46,6 +69,11 @@ Console* Engine::getConsole()
 Scene* Engine::getScene()
 {
 	return _scene;
+}
+
+GLuint* Engine::getProgramID()
+{
+	return &_programID;
 }
 
 void Engine::loadShaders(std::string pathV, std::string pathF){
@@ -83,7 +111,7 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 	glGetShaderiv(_vertexShaderID, GL_COMPILE_STATUS, &result);
 	glGetShaderiv(_vertexShaderID, GL_INFO_LOG_LENGTH, &infoLogSize);
 	if (infoLogSize > 0) {
-		std::vector<char> vertexShaderErrMsg(infoLogSize + 1);
+		std::vector<char> vertexShaderErrMsg((unsigned __int64)infoLogSize + 1);
 		glGetShaderInfoLog(_vertexShaderID, infoLogSize, NULL, &vertexShaderErrMsg[0]);
 		_console->error(&vertexShaderErrMsg[0]);
 	}
@@ -96,13 +124,12 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 	glGetShaderiv(_fragmentShaderID, GL_COMPILE_STATUS, &result);
 	glGetShaderiv(_fragmentShaderID, GL_INFO_LOG_LENGTH, &infoLogSize);
 	if (infoLogSize > 0) {
-		std::vector<char> fragmentShaderErrMsg(infoLogSize + 1);
+		std::vector<char> fragmentShaderErrMsg((unsigned __int64)infoLogSize + 1);
 		glGetShaderInfoLog(_fragmentShaderID, infoLogSize, NULL, &fragmentShaderErrMsg[0]);
 		_console->error(&fragmentShaderErrMsg[0]);
 	}
 
 	_console->log("Creating program...");
-	_programID = glCreateProgram();
 	glAttachShader(_programID, _vertexShaderID);
 	glAttachShader(_programID, _fragmentShaderID);
 	glLinkProgram(_programID);
@@ -110,7 +137,7 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 	glGetProgramiv(_programID, GL_LINK_STATUS, &result);
 	glGetProgramiv(_programID, GL_INFO_LOG_LENGTH, &infoLogSize);
 	if (infoLogSize > 0) {
-		std::vector<char> progErrMsg(infoLogSize + 1);
+		std::vector<char> progErrMsg((unsigned __int64)infoLogSize + 1);
 		glGetProgramInfoLog(_programID, infoLogSize, NULL, &progErrMsg[0]);
 		_console->error(&progErrMsg[0]);
 	}
@@ -121,15 +148,17 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 	glDeleteShader(_vertexShaderID);
 	glDeleteShader(_fragmentShaderID);
 	_console->log("Done creating shaders!");
+
+	_matrixID = glGetUniformLocation(_programID, "MVP");
+	_MVP = _projection * _view * _model;
 }
 
 void Engine::update() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-	// Draw here
 	glUseProgram(_programID);
+	glUniformMatrix4fv(_matrixID, 1, GL_FALSE, &_MVP[0][0]);
+	// Draw here
 	_scene->updateScene();
-
 
 	glfwSwapBuffers(_window->getWindow());
 	glfwPollEvents();
