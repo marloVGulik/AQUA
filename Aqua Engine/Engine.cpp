@@ -50,6 +50,9 @@ Engine::Engine(std::string title) {
 	_model = glm::mat4(1.0f);
 	_MVP = _projection * _view * _model;
 
+	_currentTime = new double(glfwGetTime());
+	_oldTime = new double(glfwGetTime());
+	_deltaTime = new float(_currentTime - _oldTime);
 }
 Engine::~Engine() {
 	glDeleteVertexArrays(1, _VAID);
@@ -154,6 +157,11 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 }
 
 void Engine::update() {
+	// Delta calculation! IMPORTANT
+	*_deltaTime = float(_currentTime - _oldTime);
+	*_oldTime = *_currentTime;
+	*_currentTime = glfwGetTime();
+
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glUseProgram(_programID);
 	glUniformMatrix4fv(_matrixID, 1, GL_FALSE, &_MVP[0][0]);
@@ -162,4 +170,5 @@ void Engine::update() {
 
 	glfwSwapBuffers(_window->getWindow());
 	glfwPollEvents();
+
 }

@@ -15,6 +15,8 @@ public:
 	GLuint* getProgramID();
 	void loadShaders(std::string pathV, std::string pathF);
 
+	float* getDTpointer();
+
 	void update();
 
 private:
@@ -31,6 +33,10 @@ private:
 	glm::mat4 _model;
 
 	glm::mat4 _MVP;
+
+	float* _deltaTime;
+	double* _currentTime;
+	double* _oldTime;
 
 	bool stopLoop = true;
 };

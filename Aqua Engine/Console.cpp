@@ -13,7 +13,7 @@ Console::Console(int debugMode, std::string fileName) {
 		*_outFile << "<html lang=\"en\">";
 		*_outFile << "<head>";
 		//*_outFile << "<link rel=\"stylesheet\" href=\"CSS\\main.css\">";
-		*_outFile << "<style>body {background-color: #000000; color: #FFFFFF}div {border: 1px solid #313131; border-radius: 1rem; box-sizing: border-box; margin:  0.5em 0;}p {padding: 1em; margin: 0;}.log {border-color: #808080; color: #808080;}.warn {border-color: #FFFF80; color: #FFFF80;}.error {border-color: #FF0000; color: #FF0000;}.aqua {border-color: #80FFFF; color: #80FFFF}.glfwError {border-color: #00FF00; color: #00FF00;}</style>";
+		*_outFile << "<style>body {background-color: #000000; color: #FFFFFF}div {border: 1px solid #313131; border-radius: 1rem; box-sizing: border-box; margin:  0.5em 0;}p {padding: 1em; margin: 0;}.log {border-color: #808080; color: #808080;}.warn {border-color: #FFFF00; color: #FFFF00;}.error {border-color: #FF0000; color: #FF0000;}.aqua {border-color: #80FFFF; color: #80FFFF}.glfwError {border-color: #00FF00; color: #00FF00;}</style>";
 		*_outFile << "<meta charset=\"UTF - 8\">";
 		*_outFile << "<meta name=\"viewport\" content=\"width = device - width, initial - scale = 1.0\">";
 		*_outFile << "<meta http-equiv=\"X - UA - Compatible\" content=\"ie = edge\">";

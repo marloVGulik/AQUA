@@ -4,7 +4,7 @@
 #include "dependencies.h"
 
 // TOOLS
-#include "LoadBMP.h"
+#include "LoadTexture.h"
 
 // Classes
 #include "Console.h"

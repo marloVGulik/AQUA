@@ -1,7 +1,7 @@
 #pragma once
 #include "dependencies.h"
 #include "Engine.h"
-#include "LoadBMP.h"
+#include "LoadTexture.h"
 
 class Engine;
 
