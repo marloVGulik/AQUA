@@ -4,3 +4,4 @@ class Scene;
 class GameObject;
 class Console;
 class Window;
+class Camera;

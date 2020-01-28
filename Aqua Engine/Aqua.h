@@ -11,3 +11,4 @@
 #include "Window.h"
 #include "GameObject.h"
 #include "Scene.h"
+#include "Camera.h"

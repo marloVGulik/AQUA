@@ -8,7 +8,7 @@ class Engine;
 class GameObject
 {
 public:
-	GameObject(std::vector<GLfloat> vertices, std::vector<GLfloat> UV, std::string path, Engine* engine);
+	GameObject(std::string path);
 	~GameObject();
 
 	void objectPollEvents();
@@ -20,6 +20,16 @@ private:
 
 	GLuint* _texture;
 	GLuint* _textureID;
+
+	glm::vec3 _loc;
+	glm::vec3 _rot;
+	glm::vec3 _scale;
+	glm::mat4 _modelMatrix;
+
+	glm::mat4* _view;
+	glm::mat4* _projection;
+
+	glm::mat4 _MVP;
 
 	Engine* _usedEngine;
 };

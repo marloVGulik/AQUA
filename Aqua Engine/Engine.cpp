@@ -15,6 +15,7 @@ Engine::Engine(std::string title) {
 
 	_window = new Window(800, 600, title, true);
 	glfwMakeContextCurrent(_window->getWindow());
+	glfwSetInputMode(_window->getWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glewExperimental = true;
 	if (glewInit() != GLEW_OK) {
 		_console->error("GLEW NOT INITIATED!");
@@ -41,18 +42,16 @@ Engine::Engine(std::string title) {
 	_programID = glCreateProgram();
 	_matrixID = glGetUniformLocation(_programID, "MVP");
 
-	_projection = glm::perspective(glm::radians(45.0f), 16.0f / 9.0f, 0.1f, 100.0f);
-	_view = glm::lookAt(
-		glm::vec3(4, 3, 3),
-		glm::vec3(0, 0, 0),
-		glm::vec3(0, 1, 0)
-	);
-	_model = glm::mat4(1.0f);
-	_MVP = _projection * _view * _model;
-
 	_currentTime = new double(glfwGetTime());
 	_oldTime = new double(glfwGetTime());
-	_deltaTime = new float(_currentTime - _oldTime);
+	_deltaTime = new float(static_cast<float>((float*)_currentTime - (float*)_oldTime));
+
+	_width = new int(0);
+	_height = new int(0);
+	glfwGetWindowSize(_window->getWindow(), _width, _height);
+	std::cout << *_width << " " << *_height << "\n";
+
+	_camera = new Camera();
 }
 Engine::~Engine() {
 	glDeleteVertexArrays(1, _VAID);
@@ -77,6 +76,31 @@ Scene* Engine::getScene()
 GLuint* Engine::getProgramID()
 {
 	return &_programID;
+}
+
+GLuint Engine::getMatrixID()
+{
+	return _matrixID;
+}
+
+glm::mat4* Engine::getProjection()
+{
+	return &_projection;
+}
+
+void Engine::setProjection(glm::mat4 newProjection)
+{
+	_projection = newProjection;
+}
+
+glm::mat4* Engine::getView()
+{
+	return &_view;
+}
+
+void Engine::setView(glm::mat4 newView)
+{
+	_view = newView;
 }
 
 void Engine::loadShaders(std::string pathV, std::string pathF){
@@ -153,7 +177,16 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 	_console->log("Done creating shaders!");
 
 	_matrixID = glGetUniformLocation(_programID, "MVP");
-	_MVP = _projection * _view * _model;
+}
+
+float* Engine::getDTpointer()
+{
+	return _deltaTime;
+}
+
+void Engine::getWindowSizes(int* width, int* height) {
+	*width = *_width;
+	*height = *_height;
 }
 
 void Engine::update() {
@@ -162,9 +195,10 @@ void Engine::update() {
 	*_oldTime = *_currentTime;
 	*_currentTime = glfwGetTime();
 
+
+
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glUseProgram(_programID);
-	glUniformMatrix4fv(_matrixID, 1, GL_FALSE, &_MVP[0][0]);
 	// Draw here
 	_scene->updateScene();
 

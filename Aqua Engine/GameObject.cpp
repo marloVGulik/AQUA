@@ -1,6 +1,25 @@
 #include "GameObject.h"
 
-GameObject::GameObject(std::vector<GLfloat> vertices, std::vector<GLfloat> UV, std::string path, Engine* engine) {
+GameObject::GameObject(std::string path) {
+	std::vector<unsigned int> vertexIn, UVIn, normalIn;
+	std::vector<glm::vec3> tempVert;
+	std::vector<glm::vec2> tempUV;
+	std::vector<glm::vec3> tempNormals;
+
+	FILE* objFile = fopen(path.c_str(), "r");
+	if (objFile == NULL) {
+		std::cout << "Error opening file!\n";
+		return;
+	}
+	while (1) {
+		char lineHeader[128];
+		int res = fscanf(objFile, "%s", lineHeader);
+		if (res == EOF) {
+			break;
+		}
+	}
+
+
 	_vertexBuffer = new GLuint;
 	glGenBuffers(1, _vertexBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, *_vertexBuffer);
@@ -18,6 +37,16 @@ GameObject::GameObject(std::vector<GLfloat> vertices, std::vector<GLfloat> UV, s
 	_usedEngine = engine;
 	_textureID = new GLuint;
 	*_textureID = glGetUniformLocation(*_usedEngine->getProgramID(), "textureSampler");
+
+	_loc = glm::vec3(0.0f);
+	_rot = glm::vec3(0.0f);
+	_scale = glm::vec3(1.0f);
+	_modelMatrix = glm::mat4(1.0f);
+
+	_view = _usedEngine->getView();
+	_projection = _usedEngine->getProjection();
+
+	_MVP = glm::mat4(*_projection * *_view * _modelMatrix);
 }
 GameObject::~GameObject() {
 
@@ -26,6 +55,9 @@ void GameObject::objectPollEvents() {
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, *_texture);
 	glUniform1i(*_textureID, 0);
+
+	_MVP = glm::mat4(*_projection * *_view * _modelMatrix);
+	glUniformMatrix4fv(_usedEngine->getMatrixID(), 1, GL_FALSE, &_MVP[0][0]);
 
 	glEnableVertexAttribArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, *_vertexBuffer);
