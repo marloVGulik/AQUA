@@ -1,7 +1,7 @@
 #include "Camera.h"
 
-Camera::Camera(GameObject* boundObj, glm::vec3 offset, Engine* engine) {
-	_boundObject = boundObj;
+Camera::Camera(glm::vec3 offset, Engine* engine) {
+	_boundObject = nullptr;
 	_offset = offset;
 	_usedEngine = engine;
 
@@ -15,10 +15,10 @@ Camera::Camera(GameObject* boundObj, glm::vec3 offset, Engine* engine) {
 	double xpos, ypos;
 	glfwGetCursorPos(engine->getWindow()->getWindow(), &xpos, &ypos);
 
-	_sensitivity = 0.005f;
+	_sensitivity = 0.0002f;
 
-	*_hAngle += float(_sensitivity * _width / 2 - xpos);
-	*_vAngle += float(_sensitivity * _height / 2 - ypos);
+	*_hAngle += float(_sensitivity * (_width / 2 - xpos));
+	*_vAngle += float(_sensitivity * (_height / 2 - ypos));
 
 	_direction = glm::vec3(
 		cos(*_vAngle) * sin(*_hAngle),
@@ -46,4 +46,40 @@ Camera::Camera(GameObject* boundObj, glm::vec3 offset, Engine* engine) {
 		)
 	);
 	_viewMatrix = _usedEngine->getView();
+}
+
+Camera::~Camera() {
+	_boundObject = nullptr;
+	_usedEngine = nullptr;
+}
+
+void Camera::update() {
+	double xpos, ypos;
+	glfwGetCursorPos(_usedEngine->getWindow()->getWindow(), &xpos, &ypos);
+
+	*_hAngle += float(_sensitivity * (_width / 2 - xpos));
+	*_vAngle += float(_sensitivity * (_height / 2 - ypos));
+
+	_direction = glm::vec3(
+		cos(*_vAngle) * sin(*_hAngle),
+		sin(*_vAngle),
+		cos(*_vAngle) * cos(*_hAngle)
+	);
+
+	_right = glm::vec3(
+		sin(*_hAngle - 3.14f / 2.0f),
+		0,
+		cos(*_hAngle - 3.14f / 2.0f)
+	);
+
+	_up = glm::cross(_right, _direction);
+
+	_usedEngine->setView(
+		glm::lookAt(
+			glm::vec3(4, 3, 3),
+			glm::vec3(4, 3, 3) + _direction,
+			_up
+		)
+	);
+	glfwSetCursorPos(_usedEngine->getWindow()->getWindow(), _width / 2, _height / 2);
 }

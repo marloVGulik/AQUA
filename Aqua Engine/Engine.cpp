@@ -32,6 +32,7 @@ Engine::Engine(std::string title) {
 	
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
+	glEnable(GL_CULL_FACE);
 
 	_VAID = new GLuint;
 	glGenVertexArrays(1, _VAID);
@@ -51,7 +52,7 @@ Engine::Engine(std::string title) {
 	glfwGetWindowSize(_window->getWindow(), _width, _height);
 	std::cout << *_width << " " << *_height << "\n";
 
-	_camera = new Camera();
+	_camera = nullptr;
 }
 Engine::~Engine() {
 	glDeleteVertexArrays(1, _VAID);

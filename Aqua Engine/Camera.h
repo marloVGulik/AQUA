@@ -5,8 +5,9 @@
 
 class Camera {
 public:
-	Camera(GameObject* boundObj, glm::vec3 offset, Engine* engine);
+	Camera(glm::vec3 offset, Engine* engine);
 	~Camera();
+	void update();
 
 
 

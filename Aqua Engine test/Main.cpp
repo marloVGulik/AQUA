@@ -8,9 +8,11 @@ int main() {
 	Console* console = engine->getConsole();
 
 	console->log("Creating object");
-	GameObject* obj = new GameObject();
+	GameObject* obj = new GameObject("Data/Models/cube.obj", "Data/textures/cube.bmp", engine);
 	scene->addGameObj(obj);
 
+	Camera* cam = new Camera(glm::vec3(1.0f), engine);
+	scene->setCamera(cam);
 	
 	console->log("Starting main loop");
 	while (engine->getWindow()->isOpen() && !glfwWindowShouldClose(engine->getWindow()->getWindow())) {
