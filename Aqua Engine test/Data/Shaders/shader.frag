@@ -11,6 +11,6 @@ void main(){
 
 	// Output color = color specified in the vertex shader, 
 	// interpolated between all 3 surrounding vertices
-  color = texture(textureSampler, UV).rgb;
-
+  	color = texture(textureSampler, UV).rgb;
+	// color = vec3(1.0, 1.0, 1.0);
 }

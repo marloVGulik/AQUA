@@ -16,6 +16,8 @@ public:
 private:
 	int _vertSize;
 	GLuint* _vertexBuffer;
+	std::vector<unsigned short> _vertexIndices;
+	GLuint* _vertexIndexBuffer;
 	GLuint* _UVBuffer;
 
 	GLuint* _texture;

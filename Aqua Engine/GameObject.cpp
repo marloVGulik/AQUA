@@ -1,10 +1,11 @@
 #include "GameObject.h"
 
 GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
-	std::vector<unsigned int> vertexIn, UVIn, normalIn;
+	std::vector<unsigned int> UVIn, normalIn;
 	std::vector<glm::vec3> tempVert;
 	std::vector<glm::vec2> tempUV;
 	std::vector<glm::vec3> tempNormals;
+
 
 	FILE* objFile = fopen(path.c_str(), "r");
 	if (objFile == NULL) {
@@ -29,12 +30,12 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 			std::cout << UV.x << " " << UV.y << "\n";
 			tempUV.push_back(UV);
 		}
-		else if (strcmp(lineHeader, "vn") == 0) {
-			glm::vec3 normal;
-			fscanf(objFile, "%f %f %f\n", &normal.x, &normal.y, &normal.z);
-			std::cout << normal.x << " " << normal.y << " " << normal.z << "\n";
-			tempNormals.push_back(normal);
-		}
+		//else if (strcmp(lineHeader, "vn") == 0) { // Not used
+		//	glm::vec3 normal;
+		//	fscanf(objFile, "%f %f %f\n", &normal.x, &normal.y, &normal.z);
+		//	std::cout << normal.x << " " << normal.y << " " << normal.z << "\n";
+		//	tempNormals.push_back(normal);
+		//}
 		else if (strcmp(lineHeader, "f") == 0) {
 			std::string vertex1, vertex2, vertex3;
 			unsigned int vertexIndex[3], uvIndex[3], normalIndex[3];
@@ -43,17 +44,17 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 				std::cout << "FILE ERROR!\n";
 				return;
 			}
-			std::cout << vertexIndex[0] << "/" << vertexIndex[1] << "/" << vertexIndex[2] << " ";
-			vertexIn.push_back(vertexIndex[0]);
-			vertexIn.push_back(vertexIndex[1]);
-			vertexIn.push_back(vertexIndex[2]);
+			std::cout << vertexIndex[0] << "/" << uvIndex[0] << "/" << normalIndex[0] << " ";
+			_vertexIndices.push_back((short)vertexIndex[0]);
+			_vertexIndices.push_back((short)vertexIndex[1]);
+			_vertexIndices.push_back((short)vertexIndex[2]);
 
-			std::cout << uvIndex[0] << "/" << uvIndex[1] << "/" << uvIndex[2] << " ";
+			std::cout << vertexIndex[1] << "/" << uvIndex[1] << "/" << normalIndex[1] << " ";
 			UVIn.push_back(uvIndex[0]);
 			UVIn.push_back(uvIndex[1]);
 			UVIn.push_back(uvIndex[2]);
 
-			std::cout << normalIndex[0] << "/" << normalIndex[1] << "/" << normalIndex[2] << "\n";
+			std::cout << vertexIndex[2] << "/" << uvIndex[2] << "/" << normalIndex[2] << "\n";
 			normalIn.push_back(normalIndex[0]);
 			normalIn.push_back(normalIndex[1]);
 			normalIn.push_back(normalIndex[2]);
@@ -62,21 +63,45 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 			std::cout << "test\n";
 		}
 	}
+
+	/*std::ifstream* objFile;
+	objFile->open(path);
+	if (!objFile->is_open()) {
+		std::cout << "ERROR OPENING FILE!\n";
+		return;
+	}
+	char READDATA;
+	while () {
+
+	}*/
+
+
+	std::cout << tempVert.size() << "\n";
+	std::cout << tempUV.size() << "\n";
 	std::vector<glm::vec3> outVert;
 	std::vector<glm::vec2> outUV;
-	for (unsigned int i = 0; i < vertexIn.size(); i++) {
-		glm::vec3 vertex = tempVert[vertexIn[i] - 1];
+	for (unsigned int i = 0; i < _vertexIndices.size(); i++) {
+		glm::vec3 vertex = tempVert[_vertexIndices[i] - 1];
 		outVert.push_back(vertex);
 	}
 	for (unsigned int i = 0; i < UVIn.size(); i++) {
 		glm::vec2 UV = tempUV[UVIn[i] - 1];
 		outUV.push_back(UV);
 	}
+	std::cout << "\n";
+	for (unsigned int i = 0; i < outVert.size(); i++) {
+		std::cout << outVert[i].x << ", " << outVert[i].y << ", " << outVert[i].z << "\n";
+	}
 
 	_vertexBuffer = new GLuint;
 	glGenBuffers(1, _vertexBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, *_vertexBuffer);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(outVert.data()) * outVert.size(), static_cast<void*>(outVert.data()), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(tempVert.data()) * tempVert.size(), static_cast<void*>(tempVert.data()), GL_STATIC_DRAW);
+	_vertexIndexBuffer = new GLuint;
+	
+	glGenBuffers(1, _vertexIndexBuffer);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *_vertexIndexBuffer);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(_vertexIndices.data()) * _vertexIndices.size(), static_cast<void*>(_vertexIndices.data()), GL_STATIC_DRAW);
 
 	_UVBuffer = new GLuint;
 	glGenBuffers(1, _UVBuffer);
@@ -94,7 +119,7 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 	_loc = glm::vec3(0.0f);
 	_rot = glm::vec3(0.0f);
 	_scale = glm::vec3(0.0f);
-	_modelMatrix = glm::mat4(0.5f);
+	_modelMatrix = glm::mat4(1.0f);
 
 	_view = _usedEngine->getView();
 	_projection = _usedEngine->getProjection();
@@ -106,7 +131,7 @@ GameObject::~GameObject() {
 }
 void GameObject::objectPollEvents() {
 	_MVP = *_projection * *_view * _modelMatrix;
-	glUniformMatrix4fv(_usedEngine->getMatrixID(), 1, GL_FALSE, &_MVP[0][0]);
+	
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, *_texture);
@@ -134,7 +159,13 @@ void GameObject::objectPollEvents() {
 		(void*)0
 	);
 
-	glDrawArrays(GL_TRIANGLES, 0, _vertSize);
+	glUniformMatrix4fv(*_usedEngine->getMatrixID(), 1, GL_FALSE, &_MVP[0][0]);
+	glDrawElements(
+		GL_TRIANGLES,
+		_vertexIndices.size(),
+		GL_UNSIGNED_SHORT,
+		(void*)0
+	);
 
 	glDisableVertexAttribArray(0);
 	glDisableVertexAttribArray(1);

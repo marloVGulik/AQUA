@@ -13,7 +13,7 @@ public:
 	Console* getConsole();
 	Scene* getScene();
 	GLuint* getProgramID();
-	GLuint getMatrixID();
+	GLuint* getMatrixID();
 
 	glm::mat4* getProjection();
 	void setProjection(glm::mat4 newView);

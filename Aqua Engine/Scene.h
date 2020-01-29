@@ -7,11 +7,11 @@ class GameObject;
 class Scene
 {
 public:
-	Scene();
+	Scene(Engine* engine);
 	~Scene();
 
 	void addGameObj(GameObject* obj);
-	void setCamera(Camera* cam);
+	Camera* getCamera();
 	void updateScene();
 private:
 	std::vector<GameObject*> _gameObjects;

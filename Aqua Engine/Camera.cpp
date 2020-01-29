@@ -1,8 +1,10 @@
 #include "Camera.h"
 
-Camera::Camera(glm::vec3 offset, Engine* engine) {
+Camera::Camera(Engine* engine) {
+	_speed = new float(3.0f);
 	_boundObject = nullptr;
-	_offset = offset;
+	_objPos = new glm::vec3(1.0f);
+	_offset = glm::vec3(0.0f);
 	_usedEngine = engine;
 
 	_deltaTime = engine->getDTpointer();
@@ -15,7 +17,7 @@ Camera::Camera(glm::vec3 offset, Engine* engine) {
 	double xpos, ypos;
 	glfwGetCursorPos(engine->getWindow()->getWindow(), &xpos, &ypos);
 
-	_sensitivity = 0.0002f;
+	_sensitivity = 0.0005f;
 
 	*_hAngle += float(_sensitivity * (_width / 2 - xpos));
 	*_vAngle += float(_sensitivity * (_height / 2 - ypos));
@@ -42,10 +44,12 @@ Camera::Camera(glm::vec3 offset, Engine* engine) {
 		glm::lookAt(
 			glm::vec3(4, 3, 3),
 			glm::vec3(0, 0, 0),
-			glm::vec3(0, 1, 0)
+			glm::vec3(0, -1, 0)
 		)
 	);
 	_viewMatrix = _usedEngine->getView();
+
+	_pos = glm::vec3(4, 3, 3);
 }
 
 Camera::~Camera() {
@@ -54,6 +58,27 @@ Camera::~Camera() {
 }
 
 void Camera::update() {
+	//_pos.z -= 0.00001f * *_deltaTime;
+	GLFWwindow* window = _usedEngine->getWindow()->getWindow();
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+		_pos += _direction * *_deltaTime * *_speed;
+	}
+	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+		_pos -= _direction * *_deltaTime * *_speed;
+	}
+	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+		_pos += _right * *_deltaTime * *_speed;
+	}
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+		_pos -= _right * *_deltaTime * *_speed;
+	}
+	if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS) {
+		_pos -= _up * *_deltaTime * *_speed;
+	}
+	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) {
+		_pos += _up * *_deltaTime * *_speed;
+	}
+
 	double xpos, ypos;
 	glfwGetCursorPos(_usedEngine->getWindow()->getWindow(), &xpos, &ypos);
 
@@ -76,8 +101,8 @@ void Camera::update() {
 
 	_usedEngine->setView(
 		glm::lookAt(
-			glm::vec3(4, 3, 3),
-			glm::vec3(4, 3, 3) + _direction,
+			_pos,
+			_pos + _direction,
 			_up
 		)
 	);

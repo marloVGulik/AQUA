@@ -21,18 +21,10 @@ Engine::Engine(std::string title) {
 		_console->error("GLEW NOT INITIATED!");
 	}
 
-	_console->log("Window created, creating local scene");
-	_scene = new Scene();
-
-	if (_console != nullptr && _window != nullptr) {
-		stopLoop = false;
-		_console->log("Started engine succesfully!");
-	}
-
 	
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
-	glEnable(GL_CULL_FACE);
+	//glEnable(GL_CULL_FACE);
 
 	_VAID = new GLuint;
 	glGenVertexArrays(1, _VAID);
@@ -52,7 +44,14 @@ Engine::Engine(std::string title) {
 	glfwGetWindowSize(_window->getWindow(), _width, _height);
 	std::cout << *_width << " " << *_height << "\n";
 
-	_camera = nullptr;
+	_console->log("Window created, creating local scene");
+	_scene = new Scene(this);
+
+	if (_console != nullptr && _window != nullptr) {
+		stopLoop = false;
+		_console->log("Started engine succesfully!");
+	}
+	_camera = _scene->getCamera();
 }
 Engine::~Engine() {
 	glDeleteVertexArrays(1, _VAID);
@@ -79,9 +78,9 @@ GLuint* Engine::getProgramID()
 	return &_programID;
 }
 
-GLuint Engine::getMatrixID()
+GLuint* Engine::getMatrixID()
 {
-	return _matrixID;
+	return &_matrixID;
 }
 
 glm::mat4* Engine::getProjection()
@@ -192,10 +191,11 @@ void Engine::getWindowSizes(int* width, int* height) {
 
 void Engine::update() {
 	// Delta calculation! IMPORTANT
-	*_deltaTime = float(_currentTime - _oldTime);
+	*_deltaTime = float(*_currentTime - *_oldTime);
 	*_oldTime = *_currentTime;
 	*_currentTime = glfwGetTime();
 
+	_matrixID = glGetUniformLocation(_programID, "MVP");
 
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

@@ -1,7 +1,7 @@
 #include "Scene.h"
-Scene::Scene() {
+Scene::Scene(Engine* engine) {
 	_gameObjects = std::vector<GameObject*>(0);
-	_camera = nullptr;
+	_camera = new Camera(engine);
 }
 Scene::~Scene() {
 
@@ -10,14 +10,16 @@ void Scene::addGameObj(GameObject* obj) {
 	_gameObjects.push_back(obj);
 }
 
-void Scene::setCamera(Camera* cam) {
-	_camera = cam;
+Camera* Scene::getCamera() {
+	return _camera;
 }
 
 void Scene::updateScene() {
 	// UPDATE SCENE
+	if (_camera != nullptr) {
+		_camera->update();
+	}
 	for (int i = 0; i < _gameObjects.size(); i++) {
 		_gameObjects[i]->objectPollEvents();
 	}
-	_camera->update();
 }

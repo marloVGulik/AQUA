@@ -5,7 +5,7 @@
 
 class Camera {
 public:
-	Camera(glm::vec3 offset, Engine* engine);
+	Camera(Engine* engine);
 	~Camera();
 	void update();
 
@@ -20,6 +20,8 @@ private:
 
 	int _width;
 	int _height;
+
+	float* _speed;
 
 	glm::vec3 _direction;
 	glm::vec3 _right;
