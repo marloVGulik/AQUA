@@ -15,9 +15,9 @@ public:
 	GLuint* getProgramID();
 	GLuint* getMatrixID();
 
-	glm::mat4* getProjection();
+	glm::mat4 getProjection();
 	void setProjection(glm::mat4 newView);
-	glm::mat4* getView();
+	glm::mat4 getView();
 	void setView(glm::mat4 newView);
 	
 	void loadShaders(std::string pathV, std::string pathF);

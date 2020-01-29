@@ -23,9 +23,13 @@ private:
 	GLuint* _texture;
 	GLuint* _textureID;
 
-	glm::vec3 _loc;
-	glm::vec3 _rot;
+	glm::vec3 _location;
+	glm::vec3 _rotation;
 	glm::vec3 _scale;
+
+	glm::mat4 _translationMatrix;
+	glm::mat4 _rotationMatrix;
+	glm::mat4 _scalingMatrix;
 
 	glm::mat4* _view;
 	glm::mat4* _projection;
@@ -34,4 +38,6 @@ private:
 	glm::mat4 _MVP;
 
 	Engine* _usedEngine;
+
+	void _posToMat4();
 };

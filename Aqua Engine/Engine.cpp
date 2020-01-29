@@ -83,9 +83,9 @@ GLuint* Engine::getMatrixID()
 	return &_matrixID;
 }
 
-glm::mat4* Engine::getProjection()
+glm::mat4 Engine::getProjection()
 {
-	return &_projection;
+	return _projection;
 }
 
 void Engine::setProjection(glm::mat4 newProjection)
@@ -93,9 +93,9 @@ void Engine::setProjection(glm::mat4 newProjection)
 	_projection = newProjection;
 }
 
-glm::mat4* Engine::getView()
+glm::mat4 Engine::getView()
 {
-	return &_view;
+	return _view;
 }
 
 void Engine::setView(glm::mat4 newView)

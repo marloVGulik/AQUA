@@ -9,7 +9,8 @@ int main() {
 
 	Camera* cam = scene->getCamera();
 	console->log("Creating object");
-	GameObject* obj = new GameObject("Data/Models/cube.obj", "Data/textures/cube.bmp", engine);
+	//GameObject* obj = new GameObject("Data/Models/cube.obj", "Data/textures/cube.bmp", engine);
+	GameObject* obj = new GameObject("Data/Models/ball.obj", "Data/textures/ball.bmp", engine);
 	scene->addGameObj(obj);
 
 	
