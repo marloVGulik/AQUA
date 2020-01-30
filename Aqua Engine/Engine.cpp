@@ -13,7 +13,7 @@ Engine::Engine(std::string title) {
 		_console->error("GLFW NOT INITIATED!");
 	}
 
-	_window = new Window(800, 600, title, true);
+	_window = new Window(800, 600, title, false);
 	glfwMakeContextCurrent(_window->getWindow());
 	glfwSetInputMode(_window->getWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glewExperimental = GL_TRUE;
