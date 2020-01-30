@@ -37,8 +37,7 @@ Camera::Camera(Engine* engine) {
 
 	_FoV = 90.0f;
 	//_objPos = new glm::vec3(boundObj);
-
-	_usedEngine->setProjection(glm::perspective(glm::radians(_FoV), float(_width / _height), 0.1f, 100.0f));
+	_usedEngine->setProjection(glm::perspective(glm::radians(_FoV), float((float)_width / (float)_height), 0.1f, 100.0f));
 	_projectionMatrix = new glm::mat4(_usedEngine->getProjection());
 	_usedEngine->setView(
 		glm::lookAt(
@@ -106,6 +105,6 @@ void Camera::update() {
 			_up
 		)
 	);
-	_usedEngine->setProjection(glm::perspective(glm::radians(_FoV), float(_width / _height), 0.1f, 100.0f));
+	_usedEngine->setProjection(glm::perspective(glm::radians(_FoV), float((float)_width / (float)_height), 0.1f, 100.0f));
 	glfwSetCursorPos(_usedEngine->getWindow()->getWindow(), _width / 2, _height / 2);
 }
