@@ -16,11 +16,11 @@ Engine::Engine(std::string title) {
 	_window = new Window(800, 600, title, true);
 	glfwMakeContextCurrent(_window->getWindow());
 	glfwSetInputMode(_window->getWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-	glewExperimental = true;
+	glewExperimental = GL_TRUE;
 	if (glewInit() != GLEW_OK) {
 		_console->error("GLEW NOT INITIATED!");
 	}
-
+	
 	
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);

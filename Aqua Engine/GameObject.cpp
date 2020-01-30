@@ -81,6 +81,11 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 		outVert.push_back(vertex.y);
 		outVert.push_back(vertex.z);
 	}
+	/*for (unsigned int i = 0; i < tempVert.size(); i++) {
+		outVert.push_back(tempVert[i].x);
+		outVert.push_back(tempVert[i].y);
+		outVert.push_back(tempVert[i].z);
+	}*/
 	for (unsigned int i = 0; i < UVIn.size(); i++) {
 		glm::vec2 UV = tempUV[UVIn[i] - 1];
 		outUV.push_back(UV.x);
@@ -90,47 +95,10 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 	/*for (unsigned int i = 0; i < outVert.size(); i++) {
 		std::cout << outVert[i].x << ", " << outVert[i].y << ", " << outVert[i].z << "\n";
 	}*/
-	std::vector<GLfloat> testVert = {
-		-1.0f,-1.0f,-1.0f,
-		-1.0f,-1.0f, 1.0f,
-		-1.0f, 1.0f, 1.0f,
-		 1.0f, 1.0f,-1.0f,
-		-1.0f,-1.0f,-1.0f,
-		-1.0f, 1.0f,-1.0f,
-		 1.0f,-1.0f, 1.0f,
-		-1.0f,-1.0f,-1.0f,
-		 1.0f,-1.0f,-1.0f,
-		 1.0f, 1.0f,-1.0f,
-		 1.0f,-1.0f,-1.0f,
-		-1.0f,-1.0f,-1.0f,
-		-1.0f,-1.0f,-1.0f,
-		-1.0f, 1.0f, 1.0f,
-		-1.0f, 1.0f,-1.0f,
-		 1.0f,-1.0f, 1.0f,
-		-1.0f,-1.0f, 1.0f,
-		-1.0f,-1.0f,-1.0f,
-		-1.0f, 1.0f, 1.0f,
-		-1.0f,-1.0f, 1.0f,
-		 1.0f,-1.0f, 1.0f,
-		 1.0f, 1.0f, 1.0f,
-		 1.0f,-1.0f,-1.0f,
-		 1.0f, 1.0f,-1.0f,
-		 1.0f,-1.0f,-1.0f,
-		 1.0f, 1.0f, 1.0f,
-		 1.0f,-1.0f, 1.0f,
-		 1.0f, 1.0f, 1.0f,
-		 1.0f, 1.0f,-1.0f,
-		-1.0f, 1.0f,-1.0f,
-		 1.0f, 1.0f, 1.0f,
-		-1.0f, 1.0f,-1.0f,
-		-1.0f, 1.0f, 1.0f,
-		 1.0f, 1.0f, 1.0f,
-		-1.0f, 1.0f, 1.0f,
-		 1.0f,-1.0f, 1.0f 
-	};
 
 	_vertSize = _vertexIndices.size();
-	std::cout << _vertSize << "\n";
+	//_vertSize = outVert.size();
+	//std::cout << _vertSize << "\n";
 
 	*_texture = loadBMP(imgPath);
 	*_textureID = glGetUniformLocation(*_usedEngine->getProgramID(), "textureSampler");
@@ -149,6 +117,9 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 
 	_MVP = *_projection * *_view * _modelMatrix;
 
+	if (glewInit() != GLEW_OK) {
+		std::cout << "ERROR?\n";
+	}
 
 	_vertexBuffer = new GLuint;
 	glGenBuffers(1, _vertexBuffer);
@@ -156,22 +127,23 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 	//glBufferData(GL_ARRAY_BUFFER, sizeof(tempVert.data()) * tempVert.size(), static_cast<void*>(tempVert.data()), GL_STATIC_DRAW);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(outVert.data())* outVert.size(), static_cast<void*>(outVert.data()), GL_STATIC_DRAW);
 
-	_vertexIndexBuffer = new GLuint;
-	glGenBuffers(1, _vertexIndexBuffer);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *_vertexIndexBuffer);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(_vertexIndices.data())* _vertexIndices.size(), static_cast<void*>(_vertexIndices.data()), GL_STATIC_DRAW);
-
 	_UVBuffer = new GLuint;
 	glGenBuffers(1, _UVBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, *_UVBuffer);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(outUV.data())* outUV.size(), static_cast<void*>(outUV.data()), GL_STATIC_DRAW);
+
+	//_vertexIndexBuffer = new GLuint;
+	//glGenBuffers(1, _vertexIndexBuffer);
+	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *_vertexIndexBuffer);
+	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(_vertexIndices.data())* _vertexIndices.size(), static_cast<void*>(_vertexIndices.data()), GL_STATIC_DRAW);
+
 }
 GameObject::~GameObject() {
 
 }
 void GameObject::objectPollEvents() {
 
-	_location.x += 1.0f * *_usedEngine->getDTpointer();
+	//_location.x += 1.0f * *_usedEngine->getDTpointer();
 
 	_posToMat4();
 	_view = &_usedEngine->getView();
@@ -206,7 +178,7 @@ void GameObject::objectPollEvents() {
 		0,
 		(void*)0
 	);
-
+	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	glDrawArrays(GL_TRIANGLES, 0, _vertSize);
 	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *_vertexIndexBuffer); // Indexing doesn't work :(
 	//glDrawElements(
