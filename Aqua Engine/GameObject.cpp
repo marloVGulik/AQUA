@@ -40,23 +40,25 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 			tempNormals.push_back(normal);
 		}
 		else if (strcmp(lineHeader, "f") == 0) {
-			std::string vertex1, vertex2, vertex3;
 			unsigned int vertexIndex[3], uvIndex[3], normalIndex[3];
-			int matches = fscanf(objFile, "%d/%d/%d %d/%d/%d %d/%d/%d\n", &vertexIndex[0], &uvIndex[0], &normalIndex[0], &vertexIndex[1], &uvIndex[1], &normalIndex[1], &vertexIndex[2], &uvIndex[2], &normalIndex[2]);
+			int matches = fscanf(objFile, "%u/%u/%u %u/%u/%u %u/%u/%u\n", &vertexIndex[0], &uvIndex[0], &normalIndex[0], &vertexIndex[1], &uvIndex[1], &normalIndex[1], &vertexIndex[2], &uvIndex[2], &normalIndex[2]);
 			if (matches != 9) {
 				std::cout << "FILE ERROR!\n";
 				return;
 			}
 			//std::cout << vertexIndex[0] << "/" << uvIndex[0] << "/" << normalIndex[0] << " ";
 			//std::cout << vertexIndex[0] << " " << vertexIndex[1] << " " << vertexIndex[2] << "\n";
-			_vertexIndices.push_back((short)vertexIndex[0]);
-			_vertexIndices.push_back((short)vertexIndex[1]);
-			_vertexIndices.push_back((short)vertexIndex[2]);
+			if (vertexIndex[0] == 0 || vertexIndex[1] == 0 || vertexIndex[2] == 0) {
+				std::cout << "reading error! " << vertexIndex[0] << "/" << vertexIndex[1] << "/" << vertexIndex[2] << "\n";
+			}
+			_vertexIndices.push_back(vertexIndex[0] - 1);
+			_vertexIndices.push_back(vertexIndex[1] - 1);
+			_vertexIndices.push_back(vertexIndex[2] - 1);
 
 			//std::cout << vertexIndex[1] << "/" << uvIndex[1] << "/" << normalIndex[1] << " ";
-			UVIn.push_back(uvIndex[0]);
-			UVIn.push_back(uvIndex[1]);
-			UVIn.push_back(uvIndex[2]);
+			UVIn.push_back(uvIndex[0] - 1);
+			UVIn.push_back(uvIndex[1] - 1);
+			UVIn.push_back(uvIndex[2] - 1);
 
 			//std::cout << vertexIndex[2] << "/" << uvIndex[2] << "/" << normalIndex[2] << "\n";
 			normalIn.push_back(normalIndex[0]);
@@ -69,14 +71,21 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 	}
 	fclose(objFile);
 	
+	for (unsigned int i = 0; i < _vertexIndices.size(); i++) {
+		if (_vertexIndices[i] == -1) {
+			std::cout << "ERROR AT " << i << "\n";
+		}
+	}
 
 	//std::cout << tempVert.size() << "\n";
 	//std::cout << tempUV.size() << "\n";
 	std::vector<GLfloat> outVert;
 	std::vector<GLfloat> outUV;
-	std::cout << _vertexIndices.size();
 	for (unsigned int i = 0; i < _vertexIndices.size(); i++) {
-		glm::vec3 vertex = tempVert[_vertexIndices[i] - 1];
+		if (_vertexIndices[i] == -1) {
+			std::cout << "ERROR AT " << i << "\n";
+		}
+		glm::vec3 vertex = tempVert[_vertexIndices[i]];
 		outVert.push_back(vertex.x);
 		outVert.push_back(vertex.y);
 		outVert.push_back(vertex.z);
@@ -87,7 +96,7 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 		outVert.push_back(tempVert[i].z);
 	}*/
 	for (unsigned int i = 0; i < UVIn.size(); i++) {
-		glm::vec2 UV = tempUV[UVIn[i] - 1];
+		glm::vec2 UV = tempUV[UVIn[i]];
 		outUV.push_back(UV.x);
 		outUV.push_back(UV.y);
 	}

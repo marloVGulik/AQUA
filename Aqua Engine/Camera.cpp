@@ -77,6 +77,12 @@ void Camera::update() {
 	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) {
 		_pos += _up * *_deltaTime * *_speed;
 	}
+	if (glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL) == GLFW_PRESS) {
+		*_speed = 30.0f;
+	}
+	if (glfwGetKey(window, GLFW_KEY_RIGHT_SHIFT) == GLFW_PRESS) {
+		*_speed = 3.0f;
+	}
 
 	double xpos, ypos;
 	glfwGetCursorPos(_usedEngine->getWindow()->getWindow(), &xpos, &ypos);

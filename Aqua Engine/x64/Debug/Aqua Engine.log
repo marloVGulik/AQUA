@@ -1,3 +1,2 @@
-﻿  GameObject.cpp
-D:\Documents\CreationOfStuff\C++\Aqua-Engine\Aqua Engine\GameObject.cpp(99,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Aqua Engine.vcxproj -> D:\Documents\CreationOfStuff\C++\Aqua-Engine\x64\Debug\Aqua Engine.lib
+﻿  Camera.cpp
+  Aqua Engine.vcxproj -> F:\Documents\Creation of stuff\C++\Aqua-git\x64\Debug\Aqua Engine.lib
