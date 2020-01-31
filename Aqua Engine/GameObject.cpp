@@ -125,12 +125,12 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 	glGenBuffers(1, _vertexBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, *_vertexBuffer);
 	//glBufferData(GL_ARRAY_BUFFER, sizeof(tempVert.data()) * tempVert.size(), static_cast<void*>(tempVert.data()), GL_STATIC_DRAW);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(outVert.data())* outVert.size(), static_cast<void*>(outVert.data()), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(outVert.data()[0]) * outVert.size(), outVert.data(), GL_STATIC_DRAW);
 
 	_UVBuffer = new GLuint;
 	glGenBuffers(1, _UVBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, *_UVBuffer);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(outUV.data())* outUV.size(), static_cast<void*>(outUV.data()), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(outUV.data()[0]) * outUV.size(), outUV.data(), GL_STATIC_DRAW);
 
 	//_vertexIndexBuffer = new GLuint;
 	//glGenBuffers(1, _vertexIndexBuffer);

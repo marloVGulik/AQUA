@@ -10,7 +10,7 @@ int main() {
 	Camera* cam = scene->getCamera();
 	console->log("Creating object");
 	//GameObject* obj = new GameObject("Data/Models/cube.obj", "Data/textures/cube.bmp", engine);
-	//GameObject* obj = new GameObject("Data/Models/ball.obj", "Data/textures/ball.bmp", engine);
+	GameObject* obj = new GameObject("Data/Models/ball.obj", "Data/textures/ball.bmp", engine);
 	
 	// testing icospheres!
 	//GameObject* obj = new GameObject("Data/Models/ico.obj", "Data/textures/ico.bmp", engine);
@@ -21,7 +21,7 @@ int main() {
 
 	// Cursed icospheres
 	//GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/icox6.bmp", engine);
-	GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/texture.bmp", engine);
+	//GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/texture.bmp", engine);
 	scene->addGameObj(obj);
 
 	
