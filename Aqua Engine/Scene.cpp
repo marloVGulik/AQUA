@@ -2,6 +2,9 @@
 Scene::Scene(Engine* engine) {
 	_gameObjects = std::vector<GameObject*>(0);
 	_camera = new Camera(engine);
+
+	_sunlightDir = glm::vec3(1.0f);
+	_dirlightShader = glGetUniformLocation(*engine->getProgramID(), "directionalLightrot");
 }
 Scene::~Scene() {
 
@@ -12,6 +15,16 @@ void Scene::addGameObj(GameObject* obj) {
 
 Camera* Scene::getCamera() {
 	return _camera;
+}
+
+glm::vec3 Scene::getDirlightrot()
+{
+	return _sunlightDir;
+}
+
+GLuint Scene::getDirlightShader()
+{
+	return _dirlightShader;
 }
 
 void Scene::updateScene() {

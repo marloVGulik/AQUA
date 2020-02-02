@@ -37,7 +37,7 @@ Camera::Camera(Engine* engine) {
 
 	_FoV = 90.0f;
 	//_objPos = new glm::vec3(boundObj);
-	_usedEngine->setProjection(glm::perspective(glm::radians(_FoV), float((float)_width / (float)_height), 0.1f, 100.0f));
+	_usedEngine->setProjection(glm::perspective(glm::radians(_FoV), float((float)_width / (float)_height), 0.1f, 300.0f));
 	_projectionMatrix = new glm::mat4(_usedEngine->getProjection());
 	_usedEngine->setView(
 		glm::lookAt(
@@ -78,10 +78,10 @@ void Camera::update() {
 		_pos += _up * *_deltaTime * *_speed;
 	}
 	if (glfwGetKey(window, GLFW_KEY_RIGHT_CONTROL) == GLFW_PRESS) {
-		*_speed = 30.0f;
+		*_speed += 10.0f * *_deltaTime;
 	}
 	if (glfwGetKey(window, GLFW_KEY_RIGHT_SHIFT) == GLFW_PRESS) {
-		*_speed = 3.0f;
+		*_speed -= 10.0f * *_deltaTime;
 	}
 
 	double xpos, ypos;

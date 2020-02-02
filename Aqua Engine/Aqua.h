@@ -5,6 +5,7 @@
 
 // TOOLS
 #include "LoadTexture.h"
+#include "OBJloader.h"
 
 // Classes
 #include "Console.h"

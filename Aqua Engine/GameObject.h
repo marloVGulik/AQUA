@@ -16,9 +16,10 @@ public:
 private:
 	int _vertSize;
 	GLuint* _vertexBuffer;
-	std::vector<unsigned short> _vertexIndices;
 	GLuint* _vertexIndexBuffer;
+	std::vector<unsigned short> _vertexIndices;
 	GLuint* _UVBuffer;
+	GLuint* _normalBuffer;
 
 	GLuint* _texture;
 	GLuint* _textureID;
@@ -31,13 +32,17 @@ private:
 	glm::mat4 _rotationMatrix;
 	glm::mat4 _scalingMatrix;
 
-	glm::mat4* _view;
-	glm::mat4* _projection;
+	glm::mat4 _view;
+	glm::mat4 _projection;
 	glm::mat4 _modelMatrix;
+
+	GLuint _viewMatrixID;
+	GLuint _modelMatrixID;
 
 	glm::mat4 _MVP;
 
 	Engine* _usedEngine;
+	Scene* _scene;
 
 	void _posToMat4();
 };
