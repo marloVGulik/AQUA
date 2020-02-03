@@ -23,8 +23,8 @@ int main() {
 	//GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/icox6.bmp", engine);
 	//GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/icox6.bmp", engine);
 
-	//GameObject* obj = new GameObject("Data/Models/ocean.obj", "Data/textures/texture.bmp", engine);
-	GameObject* obj = new GameObject("Data/Models/Suzanne.obj", "Data/textures/Suzanne.bmp", engine);
+	GameObject* obj = new GameObject("Data/Models/ocean.obj", "Data/textures/texture.bmp", engine);
+	//GameObject* obj = new GameObject("Data/Models/Suzanne.obj", "Data/textures/Suzanne.bmp", engine);
 	scene->addGameObj(obj);
 
 	

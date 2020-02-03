@@ -20,7 +20,8 @@ void main(){
 	vec3 specularColor = vec3(0.3, 0.3, 0.3);
 
 	vec3 lightColor = vec3(1, 1, 1);
-	float lightPower = 0.1f;
+	float lightPower = 0.4;
+	float distance = length(dirLight - posWorldspace);
 
 	vec3 n = normalize(normalCamspace);
 	vec3 l = normalize(dirLight);
@@ -33,6 +34,6 @@ void main(){
 	float cosAlpha =  clamp(dot(E, R), 0, 1);
 	// Output color = color specified in the vertex shader, 
 	// interpolated between all 3 surrounding vertices
-  	color = ambientColor + diffuseColor * lightColor * lightPower + specularColor * lightColor * lightPower;
+  	color = ambientColor + diffuseColor * lightColor * lightPower * cosTheta / (distance * distance) + specularColor * lightColor * lightPower * pow(cosAlpha, 5) / (distance * distance);
 	// color = vec3(1.0, 1.0, 1.0);
 }

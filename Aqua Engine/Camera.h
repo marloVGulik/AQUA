@@ -38,5 +38,7 @@ private:
 	// Settings
 	float _sensitivity;
 	float _FoV;
+	float _clip;
+	float _drawDistance;
 };
 

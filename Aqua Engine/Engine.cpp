@@ -46,12 +46,11 @@ Engine::Engine(std::string title) {
 
 	_console->log("Window created, creating local scene");
 	_scene = new Scene(this);
-
+	_camera = _scene->getCamera();
 	if (_console != nullptr && _window != nullptr) {
 		stopLoop = false;
 		_console->log("Started engine succesfully!");
 	}
-	_camera = _scene->getCamera();
 }
 Engine::~Engine() {
 	glDeleteVertexArrays(1, _VAID);
