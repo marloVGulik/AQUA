@@ -1,6 +1,8 @@
 #include "Engine.h"
 Engine::Engine(std::string title) {
 	_console = new Console(0, "logs/engine.html");
+	_projection = glm::mat4(0.0f);
+	_view = glm::mat4(0.0f);
 
 
 	_console->log("Creating window");
@@ -13,6 +15,7 @@ Engine::Engine(std::string title) {
 		_console->error("GLFW NOT INITIATED!");
 	}
 
+
 	_window = new Window(800, 600, title, false);
 	glfwMakeContextCurrent(_window->getWindow());
 	glfwSetInputMode(_window->getWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -24,7 +27,7 @@ Engine::Engine(std::string title) {
 	
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
-	//glEnable(GL_CULL_FACE);
+	glEnable(GL_CULL_FACE);
 
 	_VAID = new GLuint;
 	glGenVertexArrays(1, _VAID);

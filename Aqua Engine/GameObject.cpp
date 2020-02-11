@@ -1,6 +1,6 @@
 #include "GameObject.h"
 
-GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
+GameObject::GameObject(std::string path, std::string imgPath, glm::vec3 location, Engine* engine) {
 	_texture = new GLuint;
 	_textureID = new GLuint;
 	_usedEngine = engine;
@@ -23,7 +23,7 @@ GameObject::GameObject(std::string path, std::string imgPath, Engine* engine) {
 	_modelMatrixID = glGetUniformLocation(*_usedEngine->getProgramID(), "M");
 	_viewMatrixID = glGetUniformLocation(*_usedEngine->getProgramID(), "V");
 
-	_location = glm::vec3(0.0f);
+	_location = location;
 	_rotation = glm::vec3(0.0f, 1.0f, 0.0f);
 	_scale = glm::vec3(1.0f);
 	_posToMat4();

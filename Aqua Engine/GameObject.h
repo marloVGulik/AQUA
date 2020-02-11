@@ -8,7 +8,7 @@ class Engine;
 class GameObject
 {
 public:
-	GameObject(std::string path, std::string imgPath, Engine* engine);
+	GameObject(std::string path, std::string imgPath, glm::vec3 location, Engine* engine);
 	~GameObject();
 
 	void objectPollEvents();
