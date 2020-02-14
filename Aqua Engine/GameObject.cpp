@@ -10,8 +10,9 @@ GameObject::GameObject(std::string path, std::string imgPath, glm::vec3 location
 	std::vector<GLfloat> outVert;
 	std::vector<GLfloat> outUV;
 	std::vector<GLfloat> outNormals;
+	std::vector<unsigned int> outvbo;
 
-	_vertSize = loadOBJ(path, outVert, outUV, outNormals);
+	_vertSize = loadOBJ(path, outVert, outUV, outNormals, outvbo);
 	if (_vertSize == 0) {
 		return;
 	}
@@ -47,10 +48,10 @@ GameObject::GameObject(std::string path, std::string imgPath, glm::vec3 location
 	glBindBuffer(GL_ARRAY_BUFFER, *_vertexBuffer);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(outVert.data()[0]) * outVert.size(), outVert.data(), GL_STATIC_DRAW);
 
-	/*_vertexIndexBuffer = new GLuint;
+	_vertexIndexBuffer = new GLuint;
 	glGenBuffers(1, _vertexIndexBuffer);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *_vertexIndexBuffer);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(_vertexIndices.data()[0])* _vertexIndices.size(), _vertexIndices.data(), GL_STATIC_DRAW);*/
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(_vertexIndices.data()[0])* _vertexIndices.size(), _vertexIndices.data(), GL_STATIC_DRAW);
 
 	_UVBuffer = new GLuint;
 	glGenBuffers(1, _UVBuffer);

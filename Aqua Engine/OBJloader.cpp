@@ -1,6 +1,6 @@
 #include "OBJloader.h"
 
-unsigned int loadOBJ(std::string path, std::vector<GLfloat> &outVert, std::vector<GLfloat> &outUV, std::vector<GLfloat> &outNormal) {
+unsigned int loadOBJ(std::string path, std::vector<GLfloat> &outVert, std::vector<GLfloat> &outUV, std::vector<GLfloat> &outNormal, std::vector<unsigned int> &outVBO) {
 	std::vector<unsigned int> vertexIn, UVIn, normalIn;
 	std::vector<glm::vec3> tempVert;
 	std::vector<glm::vec2> tempUV;
@@ -67,26 +67,30 @@ unsigned int loadOBJ(std::string path, std::vector<GLfloat> &outVert, std::vecto
 	}
 	fclose(objFile);
 
-
+	std::vector<GLfloat> tempOutVert;
+	std::vector<GLfloat> tempOutUV;
+	std::vector<GLfloat> tempOutNormal;
 	for (unsigned int i = 0; i < vertexIn.size(); i++) {
 		if (vertexIn[i] == -1) {
 			std::cout << "ERROR AT " << i << "\n";
 		}
 		glm::vec3 vertex = tempVert[vertexIn[i]];
-		outVert.push_back(vertex.x);
-		outVert.push_back(vertex.y);
-		outVert.push_back(vertex.z);
+		tempOutVert.push_back(vertex.x);
+		tempOutVert.push_back(vertex.y);
+		tempOutVert.push_back(vertex.z);
 
 
 		glm::vec2 UV = tempUV[UVIn[i]];
-		outUV.push_back(UV.x);
-		outUV.push_back(UV.y);
+		tempOutUV.push_back(UV.x);
+		tempOutUV.push_back(UV.y);
 
 		glm::vec3 normal = tempNormals[normalIn[i]];
-		outNormal.push_back(normal.x);
-		outNormal.push_back(normal.y);
-		outNormal.push_back(normal.z);
+		tempOutNormal.push_back(normal.x);
+		tempOutNormal.push_back(normal.y);
+		tempOutNormal.push_back(normal.z);
 	}
+
+
 
 	return (unsigned int)vertexIn.size();
 }

@@ -4,6 +4,7 @@
 #include "dependencies.h"
 
 // TOOLS
+#include "indexer.h"
 #include "LoadTexture.h"
 #include "OBJloader.h"
 
