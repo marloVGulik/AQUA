@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageMessage.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/cmake-modules/FindRT.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/code/CMakeLists.txt

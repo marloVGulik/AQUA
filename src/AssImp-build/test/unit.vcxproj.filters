@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\gtest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\CCompilerTest.c">
+      <Filter>UnitTests\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSimd.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utIOSystem.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utIOStreamBuffer.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utIssues.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utAnim.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\AssimpAPITest.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utBatchLoader.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utDefaultIOStream.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utFastAtof.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utMetadata.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\SceneDiffer.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\AbstractImportExportBase.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utTypes.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utVersion.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utProfiler.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSharedPPData.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utStringUtils.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\Common\utLineSplitter.cpp">
+      <Filter>UnitTests\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utLWSImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utLWOImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSMDImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utglTFImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utglTF2ImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utHMPImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utIFCImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utFBXImporterExporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utImporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utExporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ut3DImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ut3DSImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utACImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utAMFImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utASEImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utD3MFImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utQ3DImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSTLImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utXImporterExporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utX3DImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utDXFImporterExporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utPMXImporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utPLYImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utObjImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utObjTools.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utOpenGEXImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSIBImporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utBlenderIntermediate.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utBlendImportAreaLight.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utBlenderImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utBlendImportMaterials.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utBlenderWork.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utBVHImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utColladaExportCamera.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utColladaExportLight.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utColladaImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utCSMImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utB3DImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utM3DImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utMDCImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utAssbinImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utAssjsonImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utCOBImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utOgreImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utQ3BSPFileImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utOFFImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utNFFImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utXGLImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utMD2Importer.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utMD3Importer.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utMD5Importer.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\utMDLImporter.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\MDL\utMDLImporter_HL1_ImportSettings.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\MDL\utMDLImporter_HL1_Materials.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\MDL\utMDLImporter_HL1_Nodes.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utMaterialSystem.cpp">
+      <Filter>UnitTests\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utMatrix3x3.cpp">
+      <Filter>UnitTests\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utMatrix4x4.cpp">
+      <Filter>UnitTests\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utVector3.cpp">
+      <Filter>UnitTests\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utImproveCacheLocality.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utFixInfacingNormals.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utGenNormals.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utTriangulate.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utTextureTransform.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utRemoveRedundantMaterials.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utRemoveVCProcess.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utScaleProcess.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utArmaturePopulate.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utJoinVertices.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utRemoveComments.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utRemoveComponent.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utVertexTriangleAdjacency.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSplitLargeMeshes.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utFindDegenerates.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utFindInvalidData.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utLimitBoneWeights.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utPretransformVertices.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utScenePreprocessor.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utTargetAnimation.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSortByPType.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utSceneCombiner.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\utGenBoundingBoxesProcess.cpp">
+      <Filter>UnitTests\PostProcess</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\SceneDiffer.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\UTLogStream.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\TestIOSystem.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\TestModelFactory.h">
+      <Filter>UnitTests\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\unit\ImportExport\MDL\MDLHL1TestFiles.h">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6CB35EC3-B7CD-3F51-9BFE-0B770F1915EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests">
+      <UniqueIdentifier>{B22F327A-744B-3818-A219-A5253CF0E687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Common">
+      <UniqueIdentifier>{5B16F186-49A1-33A6-B11E-B16A629EDBA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Compiler">
+      <UniqueIdentifier>{EDA2B6CD-F0EC-3287-A6CB-3EC1CAA86398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\ImportExport">
+      <UniqueIdentifier>{9EFE9BB8-617C-3D89-96EE-0DF59880ED98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Material">
+      <UniqueIdentifier>{D82E1244-3AEB-31C6-ABF6-85EC023EBEAB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\Math">
+      <UniqueIdentifier>{7B65604E-E5FF-3177-8E32-A3C2AEF6CCA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\PostProcess">
+      <UniqueIdentifier>{D4087099-E59A-3407-80AA-043DD2DDAE31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

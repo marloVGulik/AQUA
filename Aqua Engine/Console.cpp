@@ -1,4 +1,4 @@
-#include "Console.h"
+#include "Console.hpp"
 
 Console::Console(int debugMode, std::string fileName) {
 	_debugMode = debugMode;

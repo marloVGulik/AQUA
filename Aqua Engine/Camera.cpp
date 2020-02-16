@@ -1,4 +1,4 @@
-#include "Camera.h"
+#include "Camera.hpp"
 
 Camera::Camera(Engine* engine) {
 	_speed = new float(3.0f);

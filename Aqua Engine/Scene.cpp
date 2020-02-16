@@ -1,4 +1,4 @@
-#include "Scene.h"
+#include "Scene.hpp"
 Scene::Scene(Engine* engine) {
 	_gameObjects = std::vector<GameObject*>(0);
 	_camera = new Camera(engine);

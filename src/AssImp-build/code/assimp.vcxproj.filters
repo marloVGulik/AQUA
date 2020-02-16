@@ -1,0 +1,1943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Assimp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\CApi\CInterfaceIOWrapper.cpp">
+      <Filter>CApi</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\BaseImporter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\BaseProcess.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\PostStepRegistry.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\ImporterRegistry.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\DefaultIOStream.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\DefaultIOSystem.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\ZipArchiveIOSystem.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Importer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\SGSpatialSort.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\VertexTriangleAdjacency.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\SpatialSort.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\SceneCombiner.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\ScenePreprocessor.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\SkeletonMeshBuilder.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\SplitByBoneCountProcess.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\StandardShapes.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\TargetAnimation.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\RemoveComments.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Subdivision.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\scene.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Bitmap.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Version.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\CreateAnimMesh.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\simd.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\material.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\DefaultLogger.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Exporter.cpp">
+      <Filter>Exporter</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\CApi\AssimpCExport.cpp">
+      <Filter>Exporter</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\CalcTangentsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ComputeUVMappingProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ConvertToLHProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\EmbedTexturesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FindDegenerates.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FindInstancesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FindInvalidDataProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FixNormalsStep.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\DropFaceNormalsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\GenFaceNormalsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\GenVertexNormalsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\PretransformVertices.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ImproveCacheLocality.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\JoinVerticesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\LimitBoneWeightsProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\RemoveRedundantMaterials.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\RemoveVCProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\SortByPTypeProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\SplitLargeMeshes.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\TextureTransform.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\TriangulateProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ValidateDataStructure.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\OptimizeGraph.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\OptimizeMeshes.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\DeboneProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ProcessHelper.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\MakeVerboseFormat.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ScaleProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ArmaturePopulate.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\GenBoundingBoxesProcess.cpp">
+      <Filter>PostProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Material\MaterialSystem.cpp">
+      <Filter>MaterialSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\STEPParser\STEPFileReader.cpp">
+      <Filter>STEPParser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\STEPParser\STEPFileEncoding.cpp">
+      <Filter>STEPParser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AMF\AMFImporter.cpp">
+      <Filter>AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AMF\AMFImporter_Geometry.cpp">
+      <Filter>AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AMF\AMFImporter_Material.cpp">
+      <Filter>AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AMF\AMFImporter_Postprocess.cpp">
+      <Filter>AMF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3DS\3DSConverter.cpp">
+      <Filter>3DS</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3DS\3DSLoader.cpp">
+      <Filter>3DS</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AC\ACLoader.cpp">
+      <Filter>AC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\ASE\ASELoader.cpp">
+      <Filter>ASE</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\ASE\ASEParser.cpp">
+      <Filter>ASE</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assbin\AssbinLoader.cpp">
+      <Filter>ASSBIN</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\B3D\B3DImporter.cpp">
+      <Filter>B3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\BVH\BVHLoader.cpp">
+      <Filter>BVH</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaHelper.cpp">
+      <Filter>COLLADA</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaLoader.cpp">
+      <Filter>COLLADA</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaParser.cpp">
+      <Filter>COLLADA</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\DXF\DXFLoader.cpp">
+      <Filter>DXF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\CSM\CSMLoader.cpp">
+      <Filter>CSM</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\HMP\HMPLoader.cpp">
+      <Filter>HMP</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Irr\IRRMeshLoader.cpp">
+      <Filter>IRRMESH</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Irr\IRRShared.cpp">
+      <Filter>IRR</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Irr\IRRLoader.cpp">
+      <Filter>IRR</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWO\LWOAnimation.cpp">
+      <Filter>LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWO\LWOBLoader.cpp">
+      <Filter>LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWO\LWOLoader.cpp">
+      <Filter>LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWO\LWOMaterial.cpp">
+      <Filter>LWO</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWS\LWSLoader.cpp">
+      <Filter>LWS</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\M3DImporter.cpp">
+      <Filter>M3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\M3DWrapper.cpp">
+      <Filter>M3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD2\MD2Loader.cpp">
+      <Filter>MD2</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD3\MD3Loader.cpp">
+      <Filter>MD3</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD5\MD5Loader.cpp">
+      <Filter>MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD5\MD5Parser.cpp">
+      <Filter>MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDC\MDCLoader.cpp">
+      <Filter>MDC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\MDLLoader.cpp">
+      <Filter>MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\MDLMaterialLoader.cpp">
+      <Filter>MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\HL1MDLLoader.cpp">
+      <Filter>MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\UniqueNameGenerator.cpp">
+      <Filter>MDL</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\NFF\NFFLoader.cpp">
+      <Filter>NFF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\NDO\NDOLoader.cpp">
+      <Filter>NDO</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\OFF\OFFLoader.cpp">
+      <Filter>OFF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjFileImporter.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjFileMtlImporter.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjFileParser.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreImporter.cpp">
+      <Filter>OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreStructs.cpp">
+      <Filter>OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreBinarySerializer.cpp">
+      <Filter>OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreXmlSerializer.cpp">
+      <Filter>OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreMaterial.cpp">
+      <Filter>OGRE</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\OpenGEX\OpenGEXImporter.cpp">
+      <Filter>OPENGEX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ply\PlyLoader.cpp">
+      <Filter>PLY</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ply\PlyParser.cpp">
+      <Filter>PLY</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MS3D\MS3DLoader.cpp">
+      <Filter>MS3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\COB\COBLoader.cpp">
+      <Filter>COB</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderLoader.cpp">
+      <Filter>BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderDNA.cpp">
+      <Filter>BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderScene.cpp">
+      <Filter>BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderModifier.cpp">
+      <Filter>BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderBMesh.cpp">
+      <Filter>BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderTessellator.cpp">
+      <Filter>BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderCustomData.cpp">
+      <Filter>BLEND</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCLoader.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCReaderGen1_2x3.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCReaderGen2_2x3.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCUtil.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCGeometry.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCMaterial.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCProfile.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCCurve.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCBoolean.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCOpenings.cpp">
+      <Filter>IFC</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\XGL\XGLLoader.cpp">
+      <Filter>XGL</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXImporter.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXParser.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXTokenizer.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXConverter.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXUtil.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXDocument.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXProperties.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXMeshGeometry.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXMaterial.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXModel.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXAnimation.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXNodeAttribute.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXDeformer.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXBinaryTokenizer.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXDocumentUtil.cpp">
+      <Filter>FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Q3D\Q3DLoader.cpp">
+      <Filter>Q3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Q3BSP\Q3BSPFileParser.cpp">
+      <Filter>Q3BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Q3BSP\Q3BSPFileImporter.cpp">
+      <Filter>Q3BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Raw\RawLoader.cpp">
+      <Filter>RAW</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\SIB\SIBImporter.cpp">
+      <Filter>SIB</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\SMD\SMDLoader.cpp">
+      <Filter>SMD</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\STL\STLLoader.cpp">
+      <Filter>STL</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Terragen\TerragenLoader.cpp">
+      <Filter>TERRAGEN</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Unreal\UnrealLoader.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X\XFileImporter.cpp">
+      <Filter>X</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X\XFileParser.cpp">
+      <Filter>X</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Geometry2D.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Geometry3D.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Group.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Light.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Metadata.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Networking.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Postprocess.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Rendering.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Shape.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Texturing.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\FIReader.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DVocabulary.cpp">
+      <Filter>X3D</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFCommon.cpp">
+      <Filter>GLTF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFImporter.cpp">
+      <Filter>GLTF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2Importer.cpp">
+      <Filter>GLTF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3MF\D3MFImporter.cpp">
+      <Filter>3MF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3MF\D3MFOpcPackage.cpp">
+      <Filter>3MF</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MMD\MMDImporter.cpp">
+      <Filter>MMD</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MMD\MMDPmxParser.cpp">
+      <Filter>MMD</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\StepFile\StepFileImporter.cpp">
+      <Filter>STEP</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\StepFile\StepFileGen1.cpp">
+      <Filter>STEP</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\StepFile\StepFileGen2.cpp">
+      <Filter>STEP</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\StepFile\StepFileGen3.cpp">
+      <Filter>STEP</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3DS\3DSExporter.cpp">
+      <Filter>3DS_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assbin\AssbinExporter.cpp">
+      <Filter>ASSBIN_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assbin\AssbinFileWriter.cpp">
+      <Filter>ASSBIN_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assxml\AssxmlExporter.cpp">
+      <Filter>ASSXML_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assxml\AssxmlFileWriter.cpp">
+      <Filter>ASSXML_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaExporter.cpp">
+      <Filter>COLLADA_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\M3DExporter.cpp">
+      <Filter>M3D_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjExporter.cpp">
+      <Filter>OBJ_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\OpenGEX\OpenGEXExporter.cpp">
+      <Filter>OPENGEX_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ply\PlyExporter.cpp">
+      <Filter>PLY_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXExporter.cpp">
+      <Filter>FBX_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXExportNode.cpp">
+      <Filter>FBX_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXExportProperty.cpp">
+      <Filter>FBX_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\STL\STLExporter.cpp">
+      <Filter>STL_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X\XFileExporter.cpp">
+      <Filter>X_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DExporter.cpp">
+      <Filter>X3D_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFExporter.cpp">
+      <Filter>GLTF_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2Exporter.cpp">
+      <Filter>GLTF_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3MF\D3MFExporter.cpp">
+      <Filter>3MF_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assjson\cencode.c">
+      <Filter>ASSJSON_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assjson\json_exporter.cpp">
+      <Filter>ASSJSON_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assjson\mesh_splitter.cpp">
+      <Filter>ASSJSON_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Step\StepExporter.cpp">
+      <Filter>STEP_EXPORTER</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\unzip\ioapi.c">
+      <Filter>Contrib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\unzip\unzip.c">
+      <Filter>Contrib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\common\shapes.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\advancing_front.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\cdt.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\sweep.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\sweep_context.cc">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\clipper\clipper.cpp">
+      <Filter>Contrib\Clipper</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\code\OpenDDLParser.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\code\DDLNode.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\code\OpenDDLCommon.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\code\OpenDDLExport.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\code\Value.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\code\OpenDDLStream.cpp">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcArithmeticCodec.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTools.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTriangleFans.cpp">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\zip\src\zip.c">
+      <Filter>ziplib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\CApi\CInterfaceIOWrapper.h">
+      <Filter>CApi</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\BaseProcess.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Importer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\ScenePrivate.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\DefaultProgressHandler.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\PolyTools.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\IFF.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\VertexTriangleAdjacency.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\ScenePreprocessor.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\SplitByBoneCountProcess.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\TargetAnimation.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\simd.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\DefaultLogger.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\LogStream.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Logger.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\NullLogger.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\Win32DebugLogStream.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\FileLogStream.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Common\StdOStreamLogStream.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\BlobIOSystem.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\CalcTangentsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ComputeUVMappingProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ConvertToLHProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\EmbedTexturesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FindDegenerates.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FindInstancesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FindInvalidDataProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\FixNormalsStep.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\DropFaceNormalsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\GenFaceNormalsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\GenVertexNormalsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\PretransformVertices.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ImproveCacheLocality.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\JoinVerticesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\LimitBoneWeightsProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\RemoveRedundantMaterials.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\RemoveVCProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\SortByPTypeProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\SplitLargeMeshes.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\TextureTransform.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\TriangulateProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ValidateDataStructure.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\OptimizeGraph.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\OptimizeMeshes.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\DeboneProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ProcessHelper.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\MakeVerboseFormat.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ScaleProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\ArmaturePopulate.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\PostProcessing\GenBoundingBoxesProcess.h">
+      <Filter>PostProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Material\MaterialSystem.h">
+      <Filter>MaterialSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\STEPParser\STEPFileReader.h">
+      <Filter>STEPParser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\STEPParser\STEPFileEncoding.h">
+      <Filter>STEPParser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AMF\AMFImporter.hpp">
+      <Filter>AMF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AMF\AMFImporter_Macro.hpp">
+      <Filter>AMF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AMF\AMFImporter_Node.hpp">
+      <Filter>AMF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3DS\3DSHelper.h">
+      <Filter>3DS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3DS\3DSLoader.h">
+      <Filter>3DS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\AC\ACLoader.h">
+      <Filter>AC</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\ASE\ASELoader.h">
+      <Filter>ASE</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\ASE\ASEParser.h">
+      <Filter>ASE</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assbin\AssbinLoader.h">
+      <Filter>ASSBIN</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\B3D\B3DImporter.h">
+      <Filter>B3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\BVH\BVHLoader.h">
+      <Filter>BVH</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaHelper.h">
+      <Filter>COLLADA</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaLoader.h">
+      <Filter>COLLADA</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaParser.h">
+      <Filter>COLLADA</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\DXF\DXFLoader.h">
+      <Filter>DXF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\DXF\DXFHelper.h">
+      <Filter>DXF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\CSM\CSMLoader.h">
+      <Filter>CSM</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\HMP\HMPFileData.h">
+      <Filter>HMP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\HMP\HMPLoader.h">
+      <Filter>HMP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\HMP\HalfLifeFileData.h">
+      <Filter>HMP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Irr\IRRMeshLoader.h">
+      <Filter>IRRMESH</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Irr\IRRShared.h">
+      <Filter>IRR</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Irr\IRRLoader.h">
+      <Filter>IRR</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWO\LWOAnimation.h">
+      <Filter>LWO</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWO\LWOFileData.h">
+      <Filter>LWO</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWO\LWOLoader.h">
+      <Filter>LWO</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\LWS\LWSLoader.h">
+      <Filter>LWS</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\M3DMaterials.h">
+      <Filter>M3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\M3DImporter.h">
+      <Filter>M3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\M3DWrapper.h">
+      <Filter>M3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\m3d.h">
+      <Filter>M3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD2\MD2FileData.h">
+      <Filter>MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD2\MD2Loader.h">
+      <Filter>MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD2\MD2NormalTable.h">
+      <Filter>MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD3\MD3FileData.h">
+      <Filter>MD3</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD3\MD3Loader.h">
+      <Filter>MD3</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD5\MD5Loader.h">
+      <Filter>MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MD5\MD5Parser.h">
+      <Filter>MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDC\MDCFileData.h">
+      <Filter>MDC</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDC\MDCLoader.h">
+      <Filter>MDC</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDC\MDCNormalTable.h">
+      <Filter>MDC</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\MDLDefaultColorMap.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\MDLFileData.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\MDLLoader.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\HalfLifeMDLBaseHeader.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\HL1FileData.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\HL1MDLLoader.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\HL1ImportDefinitions.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\HL1ImportSettings.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\HL1MeshTrivert.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\LogFunctions.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MDL\HalfLife\UniqueNameGenerator.h">
+      <Filter>MDL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\NFF\NFFLoader.h">
+      <Filter>NFF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\NDO\NDOLoader.h">
+      <Filter>NDO</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\OFF\OFFLoader.h">
+      <Filter>OFF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjFileData.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjFileImporter.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjFileMtlImporter.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjFileParser.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjTools.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreImporter.h">
+      <Filter>OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreStructs.h">
+      <Filter>OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreParsingUtils.h">
+      <Filter>OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreBinarySerializer.h">
+      <Filter>OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ogre\OgreXmlSerializer.h">
+      <Filter>OGRE</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\OpenGEX\OpenGEXImporter.h">
+      <Filter>OPENGEX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\OpenGEX\OpenGEXStructs.h">
+      <Filter>OPENGEX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ply\PlyLoader.h">
+      <Filter>PLY</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ply\PlyParser.h">
+      <Filter>PLY</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MS3D\MS3DLoader.h">
+      <Filter>MS3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\COB\COBLoader.h">
+      <Filter>COB</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\COB\COBScene.h">
+      <Filter>COB</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderLoader.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderDNA.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderDNA.inl">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderScene.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderSceneGen.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderIntermediate.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderModifier.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderBMesh.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderTessellator.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Blender\BlenderCustomData.h">
+      <Filter>BLEND</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCLoader.h">
+      <Filter>IFC</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCReaderGen_2x3.h">
+      <Filter>IFC</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\IFC\IFCUtil.h">
+      <Filter>IFC</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\XGL\XGLLoader.h">
+      <Filter>XGL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXCompileConfig.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXImporter.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXParser.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXTokenizer.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXImportSettings.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXConverter.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXUtil.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXDocument.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXProperties.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXMeshGeometry.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXCommon.h">
+      <Filter>FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Q3D\Q3DLoader.h">
+      <Filter>Q3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Q3BSP\Q3BSPFileData.h">
+      <Filter>Q3BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Q3BSP\Q3BSPFileParser.h">
+      <Filter>Q3BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Q3BSP\Q3BSPFileImporter.h">
+      <Filter>Q3BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Raw\RawLoader.h">
+      <Filter>RAW</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\SIB\SIBImporter.h">
+      <Filter>SIB</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\SMD\SMDLoader.h">
+      <Filter>SMD</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\STL\STLLoader.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Terragen\TerragenLoader.h">
+      <Filter>TERRAGEN</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Unreal\UnrealLoader.h">
+      <Filter>3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X\XFileHelper.h">
+      <Filter>X</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X\XFileImporter.h">
+      <Filter>X</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X\XFileParser.h">
+      <Filter>X</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter.hpp">
+      <Filter>X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Macro.hpp">
+      <Filter>X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DImporter_Node.hpp">
+      <Filter>X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\FIReader.hpp">
+      <Filter>X3D</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFCommon.h">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFAsset.h">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFAsset.inl">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFAssetWriter.h">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFAssetWriter.inl">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFImporter.h">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2Asset.h">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2Asset.inl">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2AssetWriter.h">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2AssetWriter.inl">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2Importer.h">
+      <Filter>GLTF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3MF\D3MFImporter.h">
+      <Filter>3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3MF\D3MFOpcPackage.h">
+      <Filter>3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3MF\3MFXmlTags.h">
+      <Filter>3MF</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MMD\MMDCpp14.h">
+      <Filter>MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MMD\MMDImporter.h">
+      <Filter>MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MMD\MMDPmdParser.h">
+      <Filter>MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MMD\MMDPmxParser.h">
+      <Filter>MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\MMD\MMDVmdParser.h">
+      <Filter>MMD</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Step\STEPFile.h">
+      <Filter>STEP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\StepFile\StepFileImporter.h">
+      <Filter>STEP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Importer\StepFile\StepReaderGen.h">
+      <Filter>STEP</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3DS\3DSExporter.h">
+      <Filter>3DS_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assbin\AssbinExporter.h">
+      <Filter>ASSBIN_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assbin\AssbinFileWriter.h">
+      <Filter>ASSBIN_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assxml\AssxmlExporter.h">
+      <Filter>ASSXML_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assxml\AssxmlFileWriter.h">
+      <Filter>ASSXML_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Collada\ColladaExporter.h">
+      <Filter>COLLADA_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\M3D\M3DExporter.h">
+      <Filter>M3D_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Obj\ObjExporter.h">
+      <Filter>OBJ_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\OpenGEX\OpenGEXExporter.h">
+      <Filter>OPENGEX_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Ply\PlyExporter.h">
+      <Filter>PLY_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXExporter.h">
+      <Filter>FBX_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXExportNode.h">
+      <Filter>FBX_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\FBX\FBXExportProperty.h">
+      <Filter>FBX_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\STL\STLExporter.h">
+      <Filter>STL_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X\XFileExporter.h">
+      <Filter>X_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\X3D\X3DExporter.hpp">
+      <Filter>X3D_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF\glTFExporter.h">
+      <Filter>GLTF_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\glTF2\glTF2Exporter.h">
+      <Filter>GLTF_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\3MF\D3MFExporter.h">
+      <Filter>3MF_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assjson\cencode.h">
+      <Filter>ASSJSON_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Assjson\mesh_splitter.h">
+      <Filter>ASSJSON_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\Step\StepExporter.h">
+      <Filter>STEP_EXPORTER</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\irrXMLWrapper.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\unzip\crypt.h">
+      <Filter>Contrib\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\unzip\ioapi.h">
+      <Filter>Contrib\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\unzip\unzip.h">
+      <Filter>Contrib\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\common\shapes.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\common\utils.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\advancing_front.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\cdt.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\sweep.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\poly2tri\poly2tri\sweep\sweep_context.h">
+      <Filter>Contrib\Poly2Tri</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\clipper\clipper.hpp">
+      <Filter>Contrib\Clipper</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\include\openddlparser\OpenDDLParser.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\include\openddlparser\OpenDDLParserUtils.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\include\openddlparser\OpenDDLCommon.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\include\openddlparser\OpenDDLExport.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\include\openddlparser\OpenDDLStream.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\include\openddlparser\DDLNode.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\openddlparser\include\openddlparser\Value.h">
+      <Filter>Contrib\openddl_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcAdjacencyInfo.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcArithmeticCodec.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcBinaryStream.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcCommon.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcDVEncodeParams.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcDynamicVector.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcFIFO.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcIndexedFaceSet.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcIndexedFaceSet.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcSC3DMCDecoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcSC3DMCDecoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcSC3DMCEncoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcSC3DMCEncoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTimer.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTriangleFans.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTriangleListDecoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTriangleListDecoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTriangleListEncoder.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcTriangleListEncoder.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcVector.h">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\Open3DGC\o3dgcVector.inl">
+      <Filter>Contrib\open3dgc</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\zip\src\miniz.h">
+      <Filter>ziplib</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\contrib\zip\src\zip.h">
+      <Filter>ziplib</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\anim.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\aabb.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\ai_assert.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\camera.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\color4.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\color4.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp-build\include\assimp\config.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\commonMetaData.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\defs.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Defines.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\cfileio.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\light.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\material.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\material.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\matrix3x3.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\matrix3x3.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\matrix4x4.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\matrix4x4.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\mesh.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\pbrmaterial.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\postprocess.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\quaternion.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\quaternion.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\scene.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\metadata.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\texture.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\types.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\vector2.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\vector2.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\vector3.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\vector3.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\version.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\cimport.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\importerdesc.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Importer.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\ProgressHandler.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\IOStream.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\IOSystem.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\cexport.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Exporter.hpp">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\DefaultIOStream.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\DefaultIOSystem.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\ZipArchiveIOSystem.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\SceneCombiner.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\fast_atof.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\qnan.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\BaseImporter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Hash.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\MemoryIOWrapper.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\ParsingUtils.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\StreamReader.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\StreamWriter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\StringComparison.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\StringUtils.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\SGSpatialSort.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\GenericProperty.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\SpatialSort.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\SkeletonMeshBuilder.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\SmoothingGroups.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\SmoothingGroups.inl">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\StandardShapes.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\RemoveComments.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Subdivision.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Vertex.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\LineSplitter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\TinyFormatter.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Profiler.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\LogAux.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Bitmap.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\XMLTools.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\IOStreamBuffer.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\CreateAnimMesh.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\MathFunctions.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Exceptional.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\ByteSwapper.h">
+      <Filter>include\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Compiler\pushpack1.h">
+      <Filter>Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Compiler\poppack1.h">
+      <Filter>Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\include\assimp\Compiler\pstdint.h">
+      <Filter>Compiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\Documents\Creation of stuff\C++\Aqua-git\src\AssImp\code\res\assimp.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="3D">
+      <UniqueIdentifier>{98F1A4AB-2588-3B92-A538-98AC3A24F68C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3DS">
+      <UniqueIdentifier>{0775A1A1-3D5D-347A-84B3-B8BDE5DDA586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3DS_EXPORTER">
+      <UniqueIdentifier>{F94AA85B-D8CF-3E98-9FE8-EBC75A0639F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3MF">
+      <UniqueIdentifier>{216E9FA4-3AAF-33D7-8CE8-A95E098A1338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3MF_EXPORTER">
+      <UniqueIdentifier>{0CDFA921-D249-324E-A6B2-1F43B336EEC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AC">
+      <UniqueIdentifier>{0670634D-BAD1-3257-817B-F902F0C4BF44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AMF">
+      <UniqueIdentifier>{3CB5D1CE-4264-3C6E-8CFD-9A817DE17103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASE">
+      <UniqueIdentifier>{70E5D01F-49A6-378F-A68A-712374392FE7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASSBIN">
+      <UniqueIdentifier>{15C5116A-4365-3A24-92A5-ECB94E185018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASSBIN_EXPORTER">
+      <UniqueIdentifier>{FC3A54D2-1B39-3EB0-9229-2DBA5BA3CF94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASSJSON_EXPORTER">
+      <UniqueIdentifier>{144C2EA2-AAE8-3B68-9A70-F9D6BB07A18F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASSXML_EXPORTER">
+      <UniqueIdentifier>{1627C6DE-234B-334B-8BBE-5423B249E852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="B3D">
+      <UniqueIdentifier>{0AEC8634-D115-37E9-B367-5379AD7AD1A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BLEND">
+      <UniqueIdentifier>{48C7AF13-87DC-34A5-8008-63BB88EA9617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BVH">
+      <UniqueIdentifier>{D2EC2B03-8A6E-3215-B67D-0D13CAA655C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CApi">
+      <UniqueIdentifier>{A2577C4D-48CC-35B6-ABDE-2A5747522DEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COB">
+      <UniqueIdentifier>{1FB155A7-A8E5-3C78-9E9E-5B4EC3CC480E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COLLADA">
+      <UniqueIdentifier>{A2A96A75-2DBE-36C5-8CDB-4EEACF303B79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COLLADA_EXPORTER">
+      <UniqueIdentifier>{A5D6B2EE-04E0-3D23-A9AC-CAFE0C5915F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CSM">
+      <UniqueIdentifier>{0E6F8AF3-AF4B-387B-A2C3-B3DA112D41D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{4833E137-4006-32CF-B64E-BC255AFA1841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compiler">
+      <UniqueIdentifier>{B96546F7-3247-38E5-8A28-B182D4B4E06E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib">
+      <UniqueIdentifier>{B84980B3-3C30-3C4C-9255-4F60D9923EE3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\Clipper">
+      <UniqueIdentifier>{7A73844E-D2F9-3882-8E26-5832C572F026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\Poly2Tri">
+      <UniqueIdentifier>{1890E304-1346-3CDC-A18E-50B8D8946A37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\open3dgc">
+      <UniqueIdentifier>{B480C6D4-C3D6-30AA-B8E7-472BFB16F1E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\openddl_parser">
+      <UniqueIdentifier>{98955E00-AEB0-32ED-9DE1-AAD0704D1063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contrib\unzip">
+      <UniqueIdentifier>{749A51FF-C0CC-3EB1-AA22-294B03BBC986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXF">
+      <UniqueIdentifier>{01CC705A-A9DD-384C-A196-CCB5F8E9EA16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exporter">
+      <UniqueIdentifier>{E80E2BB3-7084-325E-8A74-57CB6035909A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FBX">
+      <UniqueIdentifier>{C12C39A6-1826-3701-A9A0-635413E97051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FBX_EXPORTER">
+      <UniqueIdentifier>{47875605-4E35-3CE4-AB12-1E70FFA4B724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLTF">
+      <UniqueIdentifier>{20C2C8C1-7B62-3E11-BE5A-D82E6FE98294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLTF_EXPORTER">
+      <UniqueIdentifier>{5B771A90-719C-366B-8108-F52117C62F73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HMP">
+      <UniqueIdentifier>{B59413A9-B2BE-3D3D-8610-72EF055F3E3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IFC">
+      <UniqueIdentifier>{206A71AA-B96B-362C-AC93-90E95EF6A192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IRR">
+      <UniqueIdentifier>{5C3ABAD2-8AAE-30F3-8834-9D295052B528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IRRMESH">
+      <UniqueIdentifier>{C32AF58E-A89E-300A-A95A-34ABDAC8D272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LWO">
+      <UniqueIdentifier>{F8007357-11B1-3132-90E6-930A784EC24B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LWS">
+      <UniqueIdentifier>{E1878374-35AD-396C-96AA-46A4279898DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{4B63561F-5EC9-3F54-920D-587469A55AEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="M3D">
+      <UniqueIdentifier>{D6B725C5-5A32-3C6C-A987-44CF56DEC402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="M3D_EXPORTER">
+      <UniqueIdentifier>{6EBBEA3F-0C88-3574-8A49-FA282FDA4FAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MD2">
+      <UniqueIdentifier>{D9E1AC88-B83B-347C-8D47-3018E1872BEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MD3">
+      <UniqueIdentifier>{B23A5E03-854D-3421-9556-DEB2CFA93512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MD5">
+      <UniqueIdentifier>{42FA7DCF-0A45-3493-BF5E-2FDA2059C922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MDC">
+      <UniqueIdentifier>{5E440FC8-8530-33CA-B917-318C5DF870AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MDL">
+      <UniqueIdentifier>{CB687CF2-EAD4-3F94-9611-AC81E0A0ED5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MMD">
+      <UniqueIdentifier>{0CF5484C-4991-36E4-86EA-D6E706CA61A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MS3D">
+      <UniqueIdentifier>{176F6E76-EC3D-32D1-B03B-38873D8CB482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MaterialSystem">
+      <UniqueIdentifier>{BCE2948C-AD93-339A-84C5-E0987C0A32D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NDO">
+      <UniqueIdentifier>{CFBB8100-25E9-3DAD-BE1C-8A4F0557588A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NFF">
+      <UniqueIdentifier>{9F413B9F-52DE-3F5E-82A9-1A5ACC50E645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OBJ">
+      <UniqueIdentifier>{3AC343CB-5EDD-3250-A600-4D01C15AB43C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OBJ_EXPORTER">
+      <UniqueIdentifier>{C657D38F-C783-30E9-B4A4-C1A915E8BF41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OFF">
+      <UniqueIdentifier>{4F16B288-5A0A-342C-A025-2CFBC75DE894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OGRE">
+      <UniqueIdentifier>{16402A51-0D57-3225-88E5-EBCA77193879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPENGEX">
+      <UniqueIdentifier>{57D67B00-4F9A-3910-A413-F40A628F521C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPENGEX_EXPORTER">
+      <UniqueIdentifier>{571F7701-065C-302A-9175-3284EB96B0E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PLY">
+      <UniqueIdentifier>{DE844A5E-05F1-33B9-88DA-73D9EEFE4940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PLY_EXPORTER">
+      <UniqueIdentifier>{D32E9D74-4458-3F94-8029-6542DDFB24A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostProcessing">
+      <UniqueIdentifier>{71A59361-DDA1-3D45-A1C3-008147523CD4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Q3BSP">
+      <UniqueIdentifier>{3F4A690A-932C-3C96-9F08-22D1774FBA41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Q3D">
+      <UniqueIdentifier>{0CA395F2-ED19-3005-90F7-A6FFC425BC77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAW">
+      <UniqueIdentifier>{00E8EB1E-E968-3B84-AB3A-344405A8CCBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SIB">
+      <UniqueIdentifier>{DA2CA48F-B387-351A-AF81-C7CE7C6F5885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SMD">
+      <UniqueIdentifier>{B09DD686-0A93-3865-A509-AB833B9D42A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STEP">
+      <UniqueIdentifier>{E3A00320-868E-3583-BE23-33BE3A18A00D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STEPParser">
+      <UniqueIdentifier>{1A2EB983-D151-391F-A602-C1D4F37512A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STEP_EXPORTER">
+      <UniqueIdentifier>{30391240-9B93-3655-ADC1-90B9833DC0FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STL">
+      <UniqueIdentifier>{ED461E50-37B8-3C90-A9BD-B7A2EE5BECEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STL_EXPORTER">
+      <UniqueIdentifier>{20AD7E3E-D011-3C13-85A8-AFB258D2C026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6CB35EC3-B7CD-3F51-9BFE-0B770F1915EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TERRAGEN">
+      <UniqueIdentifier>{3ACCD616-6C99-3E77-8AA7-DE63889649CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X">
+      <UniqueIdentifier>{F3886A06-4D50-3F51-B857-98DC3822B3D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X3D">
+      <UniqueIdentifier>{0509761F-F463-3784-BC64-D91E4ED0A353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X3D_EXPORTER">
+      <UniqueIdentifier>{DBEBAB67-2A1B-3D50-A671-4FCD1939406B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XGL">
+      <UniqueIdentifier>{7B0F0C81-29BE-385B-B9EF-427E0EA1B963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X_EXPORTER">
+      <UniqueIdentifier>{AA7C9583-1A47-3D10-9792-289BBBEE89AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{7355B4F1-BE77-35B3-B47A-6C81112C4190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\assimp">
+      <UniqueIdentifier>{2DC85591-DCBE-34FF-BCC7-C2BE5B263360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ziplib">
+      <UniqueIdentifier>{9BF91241-692C-359D-82ED-064FD800F050}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

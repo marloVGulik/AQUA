@@ -1,0 +1,42 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp-build/CMakeFiles/3.17.0-rc1/CMakeCCompiler.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp-build/CMakeFiles/3.17.0-rc1/CMakeCXXCompiler.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp-build/CMakeFiles/3.17.0-rc1/CMakeRCCompiler.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp-build/CMakeFiles/3.17.0-rc1/CMakeSystem.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/CMakeLists.txt
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/assimp-config-version.cmake.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/assimp-config.cmake.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/assimp.pc.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/assimpTargets-debug.cmake.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/assimpTargets-release.cmake.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/assimpTargets.cmake.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/cmake-modules/FindPkgMacros.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/cmake-modules/FindZLIB.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/cmake-modules/PrecompiledHeader.cmake
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/cmake-modules/cmake_uninstall.cmake.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/include/assimp/config.h.in
+F:/Documents/Creation of stuff/C++/Aqua-git/src/AssImp/revision.h.in

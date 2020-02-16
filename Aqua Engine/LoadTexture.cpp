@@ -1,4 +1,4 @@
-#include "LoadTexture.h"
+#include "LoadTexture.hpp"
 
 GLuint loadBMP(std::string path) {
 	unsigned char header[54];

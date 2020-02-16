@@ -31,46 +31,52 @@
     <Filter Include="Source Files\objectManager">
       <UniqueIdentifier>{1928e07c-baa4-476c-8ee2-ee8d4a7d689f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\tools\Model loading">
+      <UniqueIdentifier>{0a7e50ad-cf1b-4897-9609-30a154f6f81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tools\Model loading">
+      <UniqueIdentifier>{8afc3dfe-e780-4235-8c70-5ccb2e830594}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Aqua.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Header Files\Rendering</Filter>
-    </ClInclude>
-    <ClInclude Include="Console.h">
-      <Filter>Header Files\tools</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObject.h">
+    <ClInclude Include="GameObject.hpp">
       <Filter>Header Files\objectManager</Filter>
     </ClInclude>
-    <ClInclude Include="Engine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene.h">
+    <ClInclude Include="Scene.hpp">
       <Filter>Header Files\objectManager</Filter>
     </ClInclude>
-    <ClInclude Include="exist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LoadTexture.h">
-      <Filter>Header Files\tools</Filter>
-    </ClInclude>
-    <ClInclude Include="Controls.h">
-      <Filter>Header Files\tools</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera.h">
+    <ClInclude Include="Camera.hpp">
       <Filter>Header Files\Rendering</Filter>
     </ClInclude>
-    <ClInclude Include="OBJloader.h">
+    <ClInclude Include="Window.hpp">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.hpp">
       <Filter>Header Files\tools</Filter>
     </ClInclude>
-    <ClInclude Include="indexer.h">
+    <ClInclude Include="Controls.hpp">
       <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Aqua.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exist.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJloader.hpp">
+      <Filter>Header Files\tools\Model loading</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadTexture.hpp">
+      <Filter>Header Files\tools\Model loading</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -89,20 +95,20 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files\objectManager</Filter>
     </ClCompile>
-    <ClCompile Include="LoadTexture.cpp">
-      <Filter>Source Files\tools</Filter>
-    </ClCompile>
     <ClCompile Include="Controls.cpp">
       <Filter>Source Files\tools</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files\Rendering</Filter>
     </ClCompile>
-    <ClCompile Include="OBJloader.cpp">
-      <Filter>Source Files\tools</Filter>
-    </ClCompile>
     <ClCompile Include="indexer.cpp">
       <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadTexture.cpp">
+      <Filter>Source Files\tools\Model loading</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJloader.cpp">
+      <Filter>Source Files\tools\Model loading</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-#include "Window.h"
+#include "Window.hpp"
 
 Window::Window(int w, int h, std::string title, bool isFullscreen) {
 	_monitor = glfwGetPrimaryMonitor();
