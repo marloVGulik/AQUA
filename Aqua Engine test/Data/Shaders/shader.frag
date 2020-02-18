@@ -7,17 +7,25 @@ in vec3 normalCamspace;
 in vec3 eyeDirectionCamspace;
 in vec3 dirLightCamspace;
 
-// Ouput data
-out vec3 color;
+// Outline
+vec3 outlineColor = vec3(0.0);
+float thickness = 1.0;
 
+// Ouput data
+out vec4 color;
+
+const float outlineOffset = 1.0 / 256.0;
 
 uniform sampler2D textureSampler;
 uniform mat4 MV;
+uniform float outlineTreshold = 0.5;
+
 
 void main(){
-	vec3 diffuseColor = texture(textureSampler, UV).rgb;
-	vec3 ambientColor = diffuseColor * vec3(0.1, 0.1, 0.1);
-	vec3 specularColor = vec3(0.3, 0.3, 0.3);
+	// vec4 diffuseColor = vec4(texture(textureSampler, UV).rgb, 1.0);
+	vec4 diffuseColor = texture(textureSampler, UV);
+	vec4 ambientColor = diffuseColor * vec4(0.1, 0.1, 0.1, 0.0);
+	vec4 specularColor = vec4(0.3, 0.3, 0.3, 1.0);
 
 	vec3 lightColor = vec3(1, 1, 1);
 	float lightPower = 40;
@@ -45,8 +53,10 @@ void main(){
 	}
 
 	float cosAlphaOut;
-	vec3 lightedColor = (diffuseColor - ambientColor) * lightColor * costhetaOut;
-  	color = ambientColor + lightedColor;
+	vec4 lightedColor = (diffuseColor - ambientColor) * vec4(lightColor, 0.5) * costhetaOut;
+	color = ambientColor + lightedColor;
+	// color = vec4(color.a);
+
 	// color = vec3(costhetaCalc);
 	// color = ambientColor + (diffuseColor - ambientColor) * (lightColor * lightPower);
 	// color = vec3(1.0, 1.0, 1.0);

@@ -17,25 +17,34 @@ int main() {
 	//GameObject* obj = new GameObject("Data/Models/icox2.obj", "Data/textures/icox2.bmp", glm::vec3(0.0f), engine);
 	//GameObject* obj = new GameObject("Data/Models/icox4.obj", "Data/textures/icox4.bmp", glm::vec3(0.0f), engine);
 	//GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/icox5.bmp", glm::vec3(0.0f), engine);
-	GameObject* obj = new GameObject("Data/Models/icox6.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine); // STOP HERE! 20.000 vert
+	//GameObject* obj = new GameObject("Data/Models/icox6.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine); // STOP HERE! 20.000 vert
 
 	// Cursed icospheres
 	//GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/icox6.bmp", engine);
 	//GameObject* obj = new GameObject("Data/Models/icox5.obj", "Data/textures/icox6.bmp", engine);
 
 	//GameObject* obj = new GameObject("Data/Models/ocean.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine);
-	//GameObject* obj = new GameObject("Data/Models/Suzanne.obj", "Data/textures/Suzanne.bmp", glm::vec3(1.0f, 10.0f, 0.0f), engine);
+	//GameObject* obj2 = new GameObject("Data/Models/ocean.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine);
+	//GameObject* obj3 = new GameObject("Data/Models/ocean.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine);
+	GameObject* obj = new GameObject("Data/Models/Suzanne.obj", "Data/textures/Suzanne.bmp", glm::vec3(1.0f, 10.0f, 0.0f), engine);
 	//GameObject* obj2 = new GameObject("Data/Models/icox6.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f, 0.0f, 3.0f), engine);
 	scene->addGameObj(obj);
 	//scene->addGameObj(obj2);
 	//scene->addGameObj(obj3);
+	
+	bool testMaps = false;
+	if (testMaps) {
+		for (unsigned short i = 0; i < 100; i++) {
+			scene->addGameObj(obj);
+		}
+	}
 
 	
 	console->log("Starting main loop");
 	while (engine->getWindow()->isOpen() && !glfwWindowShouldClose(engine->getWindow()->getWindow())) {
-		
-
-		engine->update();
+		if (!engine->update()) {
+			break;
+		}
 	}
 	console->log("Closed main loop");
 

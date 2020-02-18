@@ -57,9 +57,6 @@
     <ClInclude Include="Controls.hpp">
       <Filter>Header Files\tools</Filter>
     </ClInclude>
-    <ClInclude Include="indexer.hpp">
-      <Filter>Header Files\tools</Filter>
-    </ClInclude>
     <ClInclude Include="Aqua.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -76,6 +73,9 @@
       <Filter>Header Files\tools\Model loading</Filter>
     </ClInclude>
     <ClInclude Include="LoadTexture.hpp">
+      <Filter>Header Files\tools\Model loading</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer.hpp">
       <Filter>Header Files\tools\Model loading</Filter>
     </ClInclude>
   </ItemGroup>
@@ -101,13 +101,13 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files\Rendering</Filter>
     </ClCompile>
-    <ClCompile Include="indexer.cpp">
-      <Filter>Source Files\tools</Filter>
-    </ClCompile>
     <ClCompile Include="LoadTexture.cpp">
       <Filter>Source Files\tools\Model loading</Filter>
     </ClCompile>
     <ClCompile Include="OBJloader.cpp">
+      <Filter>Source Files\tools\Model loading</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer.cpp">
       <Filter>Source Files\tools\Model loading</Filter>
     </ClCompile>
   </ItemGroup>

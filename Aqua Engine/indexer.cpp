@@ -18,12 +18,13 @@ struct VertexPacked {
 		return memcmp((void*)this, (void*)&pvertex, sizeof(VertexPacked)) > 0;
 	}
 };
-bool getSimVertex(VertexPacked& pvertex, std::map<VertexPacked, unsigned int>& vertexToOutIndex, unsigned int result) {
+bool getSimVertex(VertexPacked& pvertex, std::map<VertexPacked, unsigned int>& vertexToOutIndex, unsigned int& result) {
 	std::map<VertexPacked, unsigned int>::iterator it = vertexToOutIndex.find(pvertex);
 	if (it == vertexToOutIndex.end()) {
 		return false;
 	}
 	else {
+		result = it->second;
 		return true;
 	}
 }
@@ -55,9 +56,9 @@ void indexObj(std::vector<glm::vec3>& inVert, std::vector<glm::vec2>& inUV, std:
 			outUV.push_back(inUV[i]);
 			outNormal.push_back(inNormal[i]);
 			unsigned int newIndex = (unsigned int)outVert.size() - 1;
-			outVBOIndex.push_back(newIndex);
-			vertexToOutIndex[currentPVertex] = newIndex;
-			//count++;
+			outVBOIndex.push_back(count);
+			vertexToOutIndex[currentPVertex] = count;
+			count++;
 		}
 		else {
 			//std::cout << "Not adding: " << indexedNumberToAdd << " already includes: " << inVert[i].x << ", " << inVert[i].y << ", " << inVert[i].z << "\n";

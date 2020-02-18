@@ -25,7 +25,9 @@ public:
 	float* getDTpointer();
 	void getWindowSizes(int* width, int* height);
 
-	void update();
+	bool update();
+
+	void forceStop(std::string errors); // KILL PROGRAM WITH FORCE! DON'T USE WITHOUT GOOD REASON
 
 private:
 	Console* _console;
@@ -45,6 +47,9 @@ private:
 	float* _deltaTime;
 	double* _currentTime;
 	double* _oldTime;
+
+	unsigned int _frameCounter;
+	unsigned int _frameCounterTemp;
 
 	bool stopLoop = true;
 };

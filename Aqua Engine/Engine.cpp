@@ -4,6 +4,9 @@ Engine::Engine(std::string title) {
 	_projection = glm::mat4(0.0f);
 	_view = glm::mat4(0.0f);
 
+	_frameCounter = 0;
+	_frameCounterTemp = 0;
+
 
 	_console->log("Creating window");
 	glfwWindowHint(GLFW_SAMPLES, 4);
@@ -33,6 +36,7 @@ Engine::Engine(std::string title) {
 	glGenVertexArrays(1, _VAID);
 	glBindVertexArray(*_VAID);
 
+	//glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 	glClearColor(0.6392156862f, 0.7372549019607f, 0.90196078431372549f, 1.0f);
 
 	_programID = glCreateProgram();
@@ -53,6 +57,10 @@ Engine::Engine(std::string title) {
 	if (_console != nullptr && _window != nullptr) {
 		stopLoop = false;
 		_console->log("Started engine succesfully!");
+	}
+	else {
+		_console->error("ENGINE DIDN'T START SUCCESFULLY!");
+		forceStop("Window or console isn't working");
 	}
 }
 Engine::~Engine() {
@@ -169,6 +177,9 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 		std::vector<char> progErrMsg((unsigned __int64)infoLogSize + 1);
 		glGetProgramInfoLog(_programID, infoLogSize, NULL, &progErrMsg[0]);
 		_console->error(&progErrMsg[0]);
+
+		forceStop("A shader isn't working correctly!");
+		return;
 	}
 
 	glDetachShader(_programID, _vertexShaderID);
@@ -191,11 +202,21 @@ void Engine::getWindowSizes(int* width, int* height) {
 	*height = *_height;
 }
 
-void Engine::update() {
+bool Engine::update() {
+	if (stopLoop) {
+		return false;
+	}
+
 	// Delta calculation! IMPORTANT
 	*_deltaTime = float(*_currentTime - *_oldTime);
 	*_oldTime = *_currentTime;
 	*_currentTime = glfwGetTime();
+
+	if (_frameCounterTemp == 50) {
+		int fps = 1 / *_deltaTime;
+		_console->log(std::to_string(fps));
+		_frameCounterTemp = 0;
+	}
 
 	_matrixID = glGetUniformLocation(_programID, "MVP");
 
@@ -208,4 +229,13 @@ void Engine::update() {
 	glfwSwapBuffers(_window->getWindow());
 	glfwPollEvents();
 
+	_frameCounter++;
+	_frameCounterTemp++;
+	return true;
+}
+
+void Engine::forceStop(std::string error) {
+	_console->error(error);
+	stopLoop = true; 
+	glfwDestroyWindow(_window->getWindow());
 }

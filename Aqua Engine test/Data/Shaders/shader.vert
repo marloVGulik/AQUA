@@ -17,10 +17,14 @@ uniform mat4 M;
 uniform mat4 V;
 uniform vec3 directionalLightrot;
 
+// Second texture coords
+varying vec2 vTexCoords;
+
 void main(){
 
 	// Output position of the vertex, in clip space : MVP * position
 	gl_Position = MVP * vec4(vertexPositionModelspace, 1);
+	vTexCoords = vertexUv;
 
 	posWorldspace = (M * vec4(vertexNormalModelspace, 1)).xyz;
 
