@@ -21,6 +21,7 @@ public:
 	void setView(glm::mat4 newView);
 	
 	void loadShaders(std::string pathV, std::string pathF);
+	unsigned int getFPSestimation();
 
 	float* getDTpointer();
 	void getWindowSizes(int* width, int* height);
@@ -50,6 +51,9 @@ private:
 
 	unsigned int _frameCounter;
 	unsigned int _frameCounterTemp;
+
+	unsigned int _FPSestimation;
+	unsigned int _amountOfFrameTests;
 
 	bool stopLoop = true;
 };

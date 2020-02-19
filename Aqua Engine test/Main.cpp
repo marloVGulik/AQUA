@@ -26,7 +26,7 @@ int main() {
 	//GameObject* obj = new GameObject("Data/Models/ocean.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine);
 	//GameObject* obj2 = new GameObject("Data/Models/ocean.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine);
 	//GameObject* obj3 = new GameObject("Data/Models/ocean.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f), engine);
-	GameObject* obj = new GameObject("Data/Models/Suzanne.obj", "Data/textures/Suzanne.bmp", glm::vec3(1.0f, 10.0f, 0.0f), engine);
+	GameObject* obj = new GameObject("Data/Models/Suzanne.obj", "Data/textures/Suzanne.bmp", glm::vec3(2.0f), engine);
 	//GameObject* obj2 = new GameObject("Data/Models/icox6.obj", "Data/textures/icox6.bmp", glm::vec3(0.0f, 0.0f, 3.0f), engine);
 	scene->addGameObj(obj);
 	//scene->addGameObj(obj2);
@@ -34,7 +34,7 @@ int main() {
 	
 	bool testMaps = false;
 	if (testMaps) {
-		for (unsigned short i = 0; i < 100; i++) {
+		for (unsigned short i = 0; i < 2000; i++) {
 			scene->addGameObj(obj);
 		}
 	}
@@ -47,6 +47,7 @@ int main() {
 		}
 	}
 	console->log("Closed main loop");
+	console->aqua("Estimated FPS: " + std::to_string(engine->getFPSestimation()));
 
 	glfwTerminate();
 

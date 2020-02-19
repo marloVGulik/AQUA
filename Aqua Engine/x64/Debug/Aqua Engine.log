@@ -1,1 +1,3 @@
-﻿
+﻿  Console.cpp
+OBJloader.obj : warning LNK4006: "unsigned int __cdecl loadOBJfile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::vector<struct glm::vec<3,float,0>,class std::allocator<struct glm::vec<3,float,0> > > &,class std::vector<struct glm::vec<2,float,0>,class std::allocator<struct glm::vec<2,float,0> > > &,class std::vector<struct glm::vec<3,float,0>,class std::allocator<struct glm::vec<3,float,0> > > &,class std::vector<unsigned int,class std::allocator<unsigned int> > &)" (?loadOBJfile@@YAIV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$vector@U?$vec@$02M$0A@@glm@@V?$allocator@U?$vec@$02M$0A@@glm@@@std@@@2@AEAV?$vector@U?$vec@$01M$0A@@glm@@V?$allocator@U?$vec@$01M$0A@@glm@@@std@@@2@1AEAV?$vector@IV?$allocator@I@std@@@2@@Z) already defined in OBJloader.obj; second definition ignored
+  Aqua Engine.vcxproj -> F:\Documents\Creation of stuff\C++\Aqua-git\x64\Debug\Aqua Engine.lib

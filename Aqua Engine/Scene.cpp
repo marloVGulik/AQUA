@@ -28,6 +28,7 @@ GLuint Scene::getDirlightShader()
 }
 
 void Scene::updateScene() {
+	_sunlightDir.x += 0.2f;
 	// UPDATE SCENE
 	if (_camera != nullptr) {
 		_camera->update();

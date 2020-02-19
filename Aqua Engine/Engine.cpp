@@ -7,6 +7,9 @@ Engine::Engine(std::string title) {
 	_frameCounter = 0;
 	_frameCounterTemp = 0;
 
+	_FPSestimation = 0;
+	_amountOfFrameTests = 0;
+
 
 	_console->log("Creating window");
 	glfwWindowHint(GLFW_SAMPLES, 4);
@@ -64,6 +67,8 @@ Engine::Engine(std::string title) {
 	}
 }
 Engine::~Engine() {
+	_console->log("Total frames rendered: " + std::to_string(_frameCounter));
+
 	glDeleteVertexArrays(1, _VAID);
 	glDeleteProgram(_programID);
 }
@@ -192,6 +197,14 @@ void Engine::loadShaders(std::string pathV, std::string pathF){
 	_matrixID = glGetUniformLocation(_programID, "MVP");
 }
 
+unsigned int Engine::getFPSestimation()
+{
+	if (_amountOfFrameTests != 0) {
+		return unsigned int(_FPSestimation / _amountOfFrameTests);
+	}
+	else return 0;
+}
+
 float* Engine::getDTpointer()
 {
 	return _deltaTime;
@@ -213,8 +226,10 @@ bool Engine::update() {
 	*_currentTime = glfwGetTime();
 
 	if (_frameCounterTemp == 50) {
-		int fps = 1 / *_deltaTime;
-		_console->log(std::to_string(fps));
+		//_console->log(std::to_string(fps));
+		_FPSestimation += 1 / *_deltaTime;
+		_amountOfFrameTests++;
+
 		_frameCounterTemp = 0;
 	}
 

@@ -15,6 +15,7 @@ public:
 
 private:
 	int _debugMode = 0;
+	std::string _fileLoc;
 	std::ofstream* _outFile = nullptr;
 
 	char* _getDT();
