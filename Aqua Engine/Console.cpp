@@ -13,13 +13,48 @@ Console::Console(int debugMode, std::string fileName) {
 		*_outFile << "<!DOCTYPE html>";
 		*_outFile << "<html lang=\"en\">";
 		*_outFile << "<head>";
-		//*_outFile << "<link rel=\"stylesheet\" href=\"CSS\\main.css\">";
-		*_outFile << "<style>body {background-color: #000000; color: #FFFFFF}button {border: 1px solid #FF0000;background-color: #000000;color: #FFFFFF;padding: 1em;width: 100px;height: 100%;margin-left: 2em}div {border: 1px solid #313131; border-radius: 1rem; box-sizing: border-box; margin:  0.5em 0;}p {padding: 1em; margin: 0;}.log {border-color: #808080; color: #808080;}.warn {border-color: #FFFF00; color: #FFFF00;}.error {border-color: #FF0000; color: #FF0000;}.aqua {border-color: #80FFFF; color: #80FFFF}.glfwError {border-color: #00FF00; color: #00FF00;}.buttonDiv{border-color: #FF0000;color: #FFFFFF;}</style>";
-		*_outFile << "<meta charset=\"UTF - 8\">";
+		*_outFile << "<style>body {background-color: #000000; color: #FFFFFF}", // CSS
+		*_outFile << "button {border: 1px solid #FF0000;background-color: #000000;color: #FFFFFF;padding: 1em;width: 100px;height: 100%;margin-left: 2em}";
+		*_outFile << "div {border: 1px solid #313131; border-radius: 1rem; box-sizing: border-box; margin:  0.5em 0;}";
+		*_outFile << "p {padding: 1em; margin: 0;}.log {border-color: #808080; color: #808080;}";
+		*_outFile << ".warn {border-color: #FFFF00; color: #FFFF00;}";
+		*_outFile << ".error {border-color: #FF0000; color: #FF0000;}";
+		*_outFile << ".aqua {border-color: #80FFFF; color: #80FFFF}";
+		*_outFile << ".glfwError {border-color: #00FF00; color: #00FF00;}";
+		*_outFile << ".buttonDiv{border-color: #FF0000;color: #FFFFFF;}</style>"; // /CSS
+		*_outFile << "<meta charset=\"UTF - 8\">"; // meta
 		*_outFile << "<meta name=\"viewport\" content=\"width = device - width, initial - scale = 1.0\">";
 		*_outFile << "<meta http-equiv=\"X - UA - Compatible\" content=\"ie = edge\">";
-		*_outFile << "<title>Program debug</title>";
-		*_outFile << "<script src='logger.js'></script>";
+		*_outFile << "<title>Program debug</title>"; // Title
+
+		*_outFile << "<script>"; // JS
+		*_outFile << "function generate() {\n";
+		*_outFile << "var allButtons = document.createElement(\"div\");\n";
+		*_outFile << "allButtons.className = \"buttonDiv\";\n";
+		*_outFile << "var buttons = [];\n";
+		*_outFile << "var buttonIDS = [\"log\", \"warn\", \"error\", \"aqua\"];\n";
+		*_outFile << "for(var i = 0; i < buttonIDS.length; i++) {\n";
+		*_outFile << "var tempButton = document.createElement(\"button\");\n";
+		*_outFile << "tempButton.id = buttonIDS[i];\n";
+		*_outFile << "tempButton.innerHTML = buttonIDS[i];\n";
+		*_outFile << "tempButton.onclick = function() {\n";
+		*_outFile << "var elementsOfClass = document.getElementsByClassName(this.id);\n";
+		*_outFile << "var hide = true;\n";
+		*_outFile << "if(elementsOfClass[0].style.display == \"none\") hide = false;\n";
+		*_outFile << "for(var i = 0; i < elementsOfClass.length; i++) {\n";
+		*_outFile << "if(hide) {\n";
+		*_outFile << "elementsOfClass[i].style.display = \"none\";\n";
+		*_outFile << "} else {\n";
+		*_outFile << "elementsOfClass[i].style.display = \"block\";\n";
+		*_outFile << "}\n";
+		*_outFile << "}\n";
+		*_outFile << "}\n";
+		*_outFile << "allButtons.appendChild(tempButton);\n";
+		*_outFile << "}\n";
+		*_outFile << "document.body.appendChild(allButtons);\n";
+		*_outFile << "}\n";
+		*_outFile << "</script>"; // /JS :(
+
 		*_outFile << "</head>";
 		*_outFile << "<body>";
 		*_outFile << "<script>generate();</script>";
