@@ -227,7 +227,7 @@ bool Engine::update() {
 
 	if (_frameCounterTemp == 50) {
 		//_console->log(std::to_string(fps));
-		_FPSestimation += 1 / *_deltaTime;
+		_FPSestimation += unsigned int(1 / *_deltaTime);
 		_amountOfFrameTests++;
 
 		_frameCounterTemp = 0;

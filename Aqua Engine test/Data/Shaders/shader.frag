@@ -28,7 +28,7 @@ void main(){
 	vec4 specularColor = vec4(0.3, 0.3, 0.3, 1.0);
 
 	vec3 lightColor = vec3(1.0);
-	float lightPower = 40.0f;
+	float lightPower = 100.0f;
 	float distance = length(dirLightCamSpace - posWorldspace);
 
 
@@ -43,7 +43,7 @@ void main(){
 	float cosAlpha =  clamp(dot(E, R), 0.0, 1.0);
 	// Output color = color specified in the vertex shader, 
 	// interpolated between all 3 surrounding vertices
-	float costhetaCalc = lightPower * cosTheta / (distance * distance);
+	float costhetaCalc = lightPower * cosTheta / distance;
 	float costhetaOut = 0.0;
 	if(costhetaCalc < 0.2) {
 		costhetaOut = 0.2;
@@ -58,7 +58,7 @@ void main(){
 	color = ambientColor + lightedColor;
 	// color = vec4(color.a);
 
-	color = vec4(costhetaCalc);
+	// color = vec4(costhetaCalc);
 	// color = ambientColor + (diffuseColor - ambientColor) * (lightColor * lightPower);
 	// color = vec3(1.0, 1.0, 1.0);
 }
