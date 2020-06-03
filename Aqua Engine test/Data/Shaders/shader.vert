@@ -26,7 +26,7 @@ void main(){
 	gl_Position = MVP * vec4(vertexPositionModelspace, 1.0);
 	// vTexCoords = vertexUv;
 
-	posWorldspace = (M * vec4(vertexNormalModelspace, 1.0)).xyz;
+	posWorldspace = vec4(M * vec4(vertexNormalModelspace, 1.0)).xyz;
 
 	vec3 vertexPosCamSpace = (V * M * vec4(vertexPositionModelspace, 1.0)).xyz;
 	eyeDirectionCamspace = vec3(0.0) - vertexPosCamSpace;
@@ -35,7 +35,7 @@ void main(){
 	// vec3 lightPos = (V * vec4(1.0)).xyz;
 	dirLightCamSpace = lightPos + eyeDirectionCamspace;
 
-	normalCamspace = (V * M * vec4(vertexNormalModelspace, 0.0)).xyz;
+	normalCamspace = normalize((V * M * vec4(vertexNormalModelspace, 0.0)).xyz);
 
 	// The color of each vertex will be interpolated
 	// to produce the color of each fragment

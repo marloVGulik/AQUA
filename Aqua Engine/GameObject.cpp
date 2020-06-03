@@ -51,11 +51,6 @@ GameObject::GameObject(std::string path, std::string imgPath, glm::vec3 location
 	glBindBuffer(GL_ARRAY_BUFFER, *_vertexBuffer);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(outVert.data()[0]) * outVert.size(), outVert.data(), GL_STATIC_DRAW);
 
-	_vertexIndexBuffer = new GLuint;
-	glGenBuffers(1, _vertexIndexBuffer);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *_vertexIndexBuffer);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(outvbo.data()[0])* outvbo.size(), outvbo.data(), GL_STATIC_DRAW);
-
 	_UVBuffer = new GLuint;
 	glGenBuffers(1, _UVBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, *_UVBuffer);
@@ -65,6 +60,11 @@ GameObject::GameObject(std::string path, std::string imgPath, glm::vec3 location
 	glGenBuffers(1, _normalBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, *_normalBuffer);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(outNormals.data()[0]) * outNormals.size(), outNormals.data(), GL_STATIC_DRAW);
+
+	_vertexIndexBuffer = new GLuint;
+	glGenBuffers(1, _vertexIndexBuffer);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *_vertexIndexBuffer);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(outvbo.data()[0]) * outvbo.size(), outvbo.data(), GL_STATIC_DRAW);
 
 }
 GameObject::~GameObject() {
@@ -86,7 +86,9 @@ void GameObject::objectPollEvents() {
 	glUniformMatrix4fv(*_usedEngine->getMatrixID(), 1, GL_FALSE, &_MVP[0][0]);
 	glUniformMatrix4fv(_viewMatrixID, 1, GL_FALSE, &_view[0][0]);
 	glUniformMatrix4fv(_modelMatrixID, 1, GL_FALSE, &_modelMatrix[0][0]);
-	glUniform3f(_scene->getDirlightShader(), 1, GL_FALSE, _scene->getDirlightrot()[0]);
+	//glUniform3f(_scene->getDirlightShader(), 1, GL_FALSE, _scene->getDirlightrot()[0]);
+	glm::vec3 lightpos = _scene->getDirlightrot();
+	glUniform3f(_scene->getDirlightShader(), lightpos.x, lightpos.y, lightpos.z);
 
 
 	glActiveTexture(GL_TEXTURE0);
@@ -99,7 +101,7 @@ void GameObject::objectPollEvents() {
 		0,
 		3,
 		GL_FLOAT,
-		GL_FALSE,
+		GL_TRUE,
 		0,
 		(void*)0
 	);
@@ -110,7 +112,7 @@ void GameObject::objectPollEvents() {
 		1,
 		2,
 		GL_FLOAT,
-		GL_FALSE,
+		GL_TRUE,
 		0,
 		(void*)0
 	);
@@ -121,7 +123,7 @@ void GameObject::objectPollEvents() {
 		2,
 		3,
 		GL_FLOAT,
-		GL_FALSE,
+		GL_TRUE,
 		0,
 		(void*)0
 	);

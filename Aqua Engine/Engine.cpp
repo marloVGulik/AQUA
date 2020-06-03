@@ -1,4 +1,4 @@
-#include "Engine.hpp"
+ #include "Engine.hpp"
 Engine::Engine(std::string title) {
 	_console = new Console(0, "logs/engine.html");
 	_projection = glm::mat4(0.0f);
@@ -30,7 +30,7 @@ Engine::Engine(std::string title) {
 		_console->error("GLEW NOT INITIATED!");
 	}
 	
-	
+	//glShadeModel(GL_SMOOTH);
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
 	glEnable(GL_CULL_FACE);
